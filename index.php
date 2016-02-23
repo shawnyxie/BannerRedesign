@@ -49,12 +49,16 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-</head>
-<body>
-<nav class="navbar navbar-default" style="margin-bottom:0px">
+
+<body style="background-image:url('./images/DartSnow.jpg'); background-repeat:no-repeat">>
+<nav class="navbar navbar-default" style="margin-bottom:0px; background-color:#1A5417; border:0px">
   <div class="container-fluid"> 
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header"> <a class="navbar-brand" href="#">Dartmouth Banner Student Portal</a></div>
+    <div class="navbar-header navbar-right" align="right"> 
+    	<a class="navbar-brand" href="index.php" style="color:#F8F8F8">
+    	Dartmouth Banner Student Portal
+        </a>
+    </div>
     <!-- Collect the nav links, forms, and other content for toggling -->    <!-- /.navbar-collapse --> 
   </div>
   <!-- /.container-fluid --> 
@@ -63,54 +67,53 @@
 <!-- HEADER -->
 <header>
   <div class="jumbotron" style="margin-bottom:0px">
-
-    <div class="container">
-      <div class="row" style="margin-top:0px">
-        	<div class="col-md-3">
+    <div class="container" align="center" >
+      <div class="row" style="margin-top:px">
+        	<div class="col-md-6">
               	<div class="row" align="center">
-                    <p>Welcome!</p>
+                    <p style="font-size:30x; font-weight:bold"> Welcome!</p>
                 </div>
-           	  <img src="DartmouthHall.png" width="250" height="400" alt=""/>
+           	  <img src="images/DartmouthHall.png" width="300" height="450" align="center" alt="Dartmouth Hall"/>
             </div>
-            <div class="col-md-6" style="margin-left:50px">
-           	  <div class="row" style="margin-top:140px; font-size:17px">
-              	<div class="col-md-8">
-               	  <div class="row">
-       	    		<label for="textfield" style="margin-right:27px" for="username" class="col-sm-5 control-label">Net ID:</label>
-       	    		  <input name="username" type="username" class="form-control" id="textfield" size="20" maxlength="20" placeholder="Net ID">
-                    </div>
-                  <div class="row" style="margin-top:10px;font-size:17px">
-           			  <label for="password" class="col-sm-5 control-label">Password:</label>
-               		  <input name="password" type="password" id="password" class="form-control" size="20" maxlength="20" placeholder="Password">
-              		</div>
-                </div>
-                <div class="col-md-4">
-                	<a class="btn btn-primary btn-lg" id="LOGIN" value="LOGIN" role="button" style="margin-left:10px; margin-top:90px">Login</a>
+            <div class="col-md-6" align="center">
+            <div class="row" style="width:400px; margin-top:80px">
+              <div class="row" style="margin-top:0px;font-size:20px">
+                  <label for="textfield" align="left" for="username" class="col-sm-5 control-label">Net ID:</label>
+                  <input name="username" type="username" class="form-control" id="textfield" maxlength="20" style="height:30px" placeholder="Net ID">
+              </div>
+              <div class="row" style="margin-top:10px;font-size:20px">
+                  <label for="password" align="left" class="col-sm-5 control-label">Password:</label>
+                  <input name="password" type="password" id="password" class="form-control" maxlength="20" style="height:30px" placeholder="Password">
                 </div>
               </div>
-                
-
-              <div class="row" style="margin-top:10px">
-              	<a href="http://tech.dartmouth.edu/its/services-support/help-yourself/netid-lookup">Need Net ID? (Applicants and First Time Users)</a>
+              <div class="row">
+                <a class="btn btn-primary btn-lg" id="LOGIN" value="LOGIN" role="button" style="margin-top:40px; background-color:#1A5417; border:hidden">Login</a>
               </div>
               <div class="row" style="margin-top:10px">
-              	<a href="https://dartdm.dartmouth.edu/dartDM/PasswordReset">Forgot Password?</a>
+              	<a style="color:#1A5417" href="http://tech.dartmouth.edu/its/services-support/help-yourself/netid-lookup">Need Net ID? (Applicants and First Time Users)</a>
+              </div>
+              <div class="row" style="margin-top:10px">
+              	<a style="color:#1A5417" href="https://dartdm.dartmouth.edu/dartDM/PasswordReset">Forgot Password?</a>
+              </div>
+              <div class="row" style="margin-top:40px">
+              	<p style="color:hsla(0,0%,0%,1.00); font-size:14px; font-weight:bold">Important Security Information: Logging in to Banner lets you access other protected Dartmouth websites with this browser, not just the website you requested.</a>
               </div>
        		</div>
       </div>
     </div>
   </div>
 </header>
+</body>
 <!-- / HEADER --> 
 
 <!--  SECTION-1 -->
 
 <!-- FOOTER -->
 
-<footer class="text-center">
+<footer class="text-center" style="background-color:#1A5417; margin-bottom:0px">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-xs-12" style="color:#F8F8F8">
         <p>Copyright © CS89.01 Team1. All rights reserved.</p>
       </div>
     </div>
@@ -121,5 +124,4 @@
 <script src="js/jquery-1.11.3.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.js"></script>
-</body>
 </html>

@@ -27,6 +27,7 @@
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,23 +36,28 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-<nav class="navbar navbar-default">
+<body style="background-image:url('./images/DartmouthCampus.JPG'); background-repeat:no-repeat">
+<nav class="navbar navbar-default" style="margin-bottom:0px; background-color:#1A5417">
   <div class="container-fluid"> 
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header"><a class="navbar-brand" href="#">Dartmouth Banner Student Portal</a></div>
-    
+    <div class="navbar-header">
+    	<a class="navbar-brand" style="color:#F8F8F8; margin-left:10px" href="#">
+    		Dartmouth Banner Student Portal
+        </a>
+    </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <form class="navbar-form navbar-right" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="btn btn-default">Go!</button>
+        <button type="submit" class="btn btn-default btn-search" value="SEARCH">
+        	<img src="./images/search_button.jpg" width="15" height="15" alt="submit"/>
+        </button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Home <span class="sr-only">(current)</span></a> </li>
-        <li><a href="index.php">Logout</a> </li>
+        <li><a style="color:#F8F8F8; font-size:large" href="#">Home <span class="sr-only">(current)</span></a> </li>
+        <li><a style="color:#F8F8F8; font-size:large" href="index.php">Logout</a> </li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -59,31 +65,21 @@
   <!-- /.container-fluid --> 
 </nav>
 
-
 <!--  SECTION-1 -->
 <section>
-<div class="row" style="margin-left:60px">
-    <div class="row">
-      <div class="col-md-3">
-          <div class="row">
-              <div class="col-md-8">
-                  <img src="jun.png" width="178" height="190" alt=""/>
-                    <p style="margin-top:5px; margin-left:5px">
-                     Change to ID Photo
-                    </p>
-                </div>
-                <div class="col-md-4">
-                  <p style="margin-top:5px">
-                    Name: 
-                    Suh,
-                    Dongjun</p>
-                  <p style="margin-top:30px">Year: '17
-                  Undergraduate</p>
-                </div>
+<div class="row" style="margin-left:100px; margin-top:50px; min-width:1300px">
+      <div class="col-md-3" style="width:250px">
+         <div class="row" align="center">
+         	<div class="row" style="margin:20px">
+              <img src="images/Taeho.png" width="200" height="230" alt="" style="margin-bottom:10px; border:5px solid black" align="left"/>
+              <p style="margin-top:10px; font-weight:bold" align="left">Name: Sung, Taeho </p>
+              <p style="font-weight:bold" align="left">Year: Class of 2017 </p>
+              <p style="font-weight:bold" align="left">Degree: Undergraduate</p>
             </div>
-            <div class="row" style="margin-top:30px">
-              <table class="table table-striped" width="180" style="margin-left:15px">
-                <caption>Recent Activities</caption>
+      	 </div>
+         <div class="row" style="margin-top:0px">
+              <table class="table table-striped" style="margin-left:0px; width:45">
+                <caption style="color:#1A5417; font-weight:bolder; font-size:larger">Recent Activities</caption>
                 <tbody>
                   <tr>
                     <td>&nbsp;</td>
@@ -105,10 +101,10 @@
                   </tr>
                 </tbody>
               </table>
-          </div>
-            <div class="row" style="margin-top:30px">
-              <table class="table table-striped" width="200" style="margin-left:10px">
-                <caption>Action Items</caption>
+        </div>
+        <div class="row" style="margin-top:0px">
+              <table class="table table-striped" width="200" style="margin-left:0px">
+                <caption style="color:#1A5417; font-weight:bolder; font-size:larger" align="center">Action Items</caption>
                 <tbody>
                   <tr>
                     <td>&nbsp;</td>
@@ -132,87 +128,114 @@
               </table>
           </div>
       </div>
-        <div class="col-md-1">
-        </div>
-    <div class="col-md-8">
-        <div class="col-md-4">
-          <div class="row">
+    <div class="col-md-9" style="margin-left:65px; margin-top:100px; min-width:800px"> 
+    <div class="row">
+          <div class="col-xs-4">
+            <a href="tabular_page.php#schedule">
+            <div align="center"> 
+              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Schedule.jpeg" data-holder-rendered="true">
+              <h3 class="greenH3">Schedule</h3>
+              <p class="greenP">View My Term Schedule</p>
+            </div>
+            </a>
+           </div>
+          <div class="col-xs-4">
             <a href="tabular_page.php">
-            <div class="col-lg-4 col-sm-12 text-center"> <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true">
-              <h3>Schedule</h3>
-              <p>View My Term Schedule</p>
+            <div  align="center">
+              <img class="img-circle" alt="200x200" style="width: 150px; height:150px;" src="images/Degree.jpg" data-holder-rendered="true">
+              <h3 class="greenH3">Degree</h3>
+              <p class="greenP">Degree, Grades, Transcript</p>
+            </div>
+            </a>
+          </div>
+          <div class="col-xs-4">
+            <a href="tabular_page.php">
+            <div align="center">
+              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Financials.png" data-holder-rendered="true">
+              <h3 class="greenH3">Financials</h3>
+              <p class="greenP">Financial Aid, D-Pay, Tuition</p>
+            </div>
+            </a>
+          </div>
+       </div>
+       <div class="row" style="margin-top:20px">
+          <div class="col-xs-4">
+            <a href="tabular_page.php">
+            <div align="center"> 
+              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Housing.jpg" data-holder-rendered="true">
+              <h3 class="greenH3">Housing</h3>
+              <p class="greenP">Student Housing</p>
+            </div>
+            </a>
+           </div>
+          <div class="col-xs-4">
+            <a href="tabular_page.php">
+            <div align="center">
+              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/StudentLife.jpg" data-holder-rendered="true">
+              <h3 class="greenH3">Student Life</h3>
+              <p class="greenP"> Check-in, Cards</p>
+            </div>
+            </a>
+          </div>
+          <div class="col-xs-4">
+            <a href="tabular_page.php">
+            <div align="center">
+              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Courses.jpg" data-holder-rendered="true">
+              <h3 class="greenH3">Courses</h3>
+              <p class="greenP">Registration</p>
+            </div>
+            </a>
+          </div>
+       </div>
+       <div class="row" style="margin-top:20px">
+          <div class="col-xs-4">
+            <a href="tabular_page.php">
+            <div align="center">
+              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/FrequentLinks.jpeg" data-holder-rendered="true">
+              <h3 class="greenH3">Quick Links</h3>
+              <p class="greenP">View Frequent Links</p>
+            </div>
+            </a>
+           </div>
+          <div class="col-xs-4">
+            <a href="tabular_page.php">
+            <div align="center">
+              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/NeedHelp.jpg" data-holder-rendered="true">
+              <h3 class="greenH3">Need Help</h3>
+              <p class="greenP">Contact us for support!</p>
             </div>
             </a>
             </div>
-            <div class="row">
-            <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true">
-              <h3>Degree</h3>
-              <p>Degree, Grades, Transcript</p>
+          <div class="col-xs-4">
+                <a href="https://canvas.dartmouth.edu">
+                <div align="center">
+                  <img class="img-circle" alt="200x200" style="width: 150px; height: 150px; margin-top:10px" src="images/Canvas.jpeg" data-holder-rendered="true">
+                </div>
+                </a>
             </div>
             </div>
-            <div class="row">
-            <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true">
-              <h3>Financials</h3>
-              <p>Financial Aid, D-Pay, Tuition</p>
-            </div>
-            </div>
-      </div>
-        
-      <div class="col-md-4">
-          <div class="row">
-              <div class="col-lg-4 col-sm-12 text-center"> <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true">
-              <h3>Housing</h3>
-              <p>Housing Application, Housing Priority Number</p>
-            </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 col-sm-12 text-center"> <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true">
-              <h3>Student Life</h3>
-              <p>Student Life</p>
-            </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 col-sm-12 text-center"> <img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true">
-              <h3>Courses</h3>
-              <p>My Courses</p>
-            </div> 
-          </div>  
-      </div>
-        
-      <div class="col-md-4">
-          <div class="row">
-            <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true">
-              <h3>Frequent Links</h3>
-              <p>Frequent Links</p>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true">
-              <h3>Need Help?</h3>
-              <p>Brings up the help menu</p>
-            </div>
-            </div>
-            <div class="row">
-            <div class="col-lg-4 col-sm-12 text-center"><img class="img-circle" alt="140x140" style="width: 140px; height: 140px;" src="images/140X140.gif" data-holder-rendered="true">
-              <h3>What</h3>
-              <p>what?</p>
-            </div>
-          </div>
-      </div>
-    </div>
-  </div>
- 
-  </div>
+     </div>
+         </div>
+     
   <!-- /container -->
   <!-- / CONTAINER-->
 
 </section>
-<div class="well"> </div>
+<nav class="navbar navbar-default" style="margin-bottom:0px; background-color:#1A5417; border:hidden">
+  <div class="container-fluid"> 
+    <div class="navbar-header navbar-right" align="right"> 
+    	<a class="navbar-brand" href="#" style="color:#F8F8F8">
+    	Dartmouth College
+        </a>
+    </div>
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
 
 <!-- FOOTER -->
 
 <footer class="text-center">
-  <div class="container">
+  <div class="container" style="height:10px">
     <div class="row">
       <div class="col-xs-12">
         <p>Copyright © CS89.01 Team1. All rights reserved.</p>
@@ -227,124 +250,3 @@
 <script src="js/bootstrap.js"></script>
 </body>
 </html>
-
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link rel="stylesheet" href="style.css"> 
-<link rel="stylesheet" href="azul.css"> 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-<title>Customer Portal</title>
-</head>
-
-<body>
-<div id="wrapper">
-<header>
-<! FOR CUSTOMERS WE restrict prileges -->
-<!-- <section> 
-  <h2 > Welcome to Our Customer Portal! </h2>
-  <h1 >  </h1>
-<form action="customer.php" method="get">
-  <button class="btn btn-large option" name="reservation" type="Go" value="past-res">Your Past Reservations</button>
-  <button class="btn btn-large option" name="reservation" type="Go" value="future-res">Your Future Reservations</button>
-  <button class="btn btn-large option" name="all-flights" type="Go" value="all-flights">View All Upcoming Flights</button>
-  <button class="btn btn-large option" name="logout" type="Go" value="logout">Logout</button>
-</form>
-</section> 
- -->
-<?php
-  //Deal with buttoms with name reservation. 
-  if(isset($_GET['reservation'])) {
-    switch ($_GET["reservation"]) {
-      case "future-res": 
-        //$show_flights = mysql_query("CALL Future_Reserv('$username')"); 
-        break;
-      case "past-res": 
-        //$show_flights = mysql_query("CALL Past_Reserv('$username')"); 
-        break;
-      default:
-        break;
-    }
-  // check that the flight data is not null. 
-  //if(!$show_flights) { die("SQL Error: " . mysql_error()); }
-    ?>
-    <table class="table table-bordered">
-      <thead>
-          <tr >
-            <td>Reserv #</td>
-            <td>Flight</td>
-            <td>Flight Status</td>
-            <td>Depart Time</td>
-            <td>Depart City</td>
-            <td>Depart State</td>
-            <td>Destination City</td>
-            <td>Destination State</td>
-          </tr>
-          </thead>
-      </table> 
-    <?php  
-  }
-  //deal with buttom in charge of displaying all flights. 
-  if(isset($_GET['all-flights'])) {
-    ?>
-        <table class="table table-bordered">
-            <thead>
-              <tr >
-                <td>Flight ID</td>
-                <td>Route Number</td>
-                <td>Depart City</td>
-                <td>Depart State</td>
-                <td>Destination City</td>
-                <td>Destination State</td>
-                <td>Depart Time</td>
-                <td>Seats Total</td>
-                <td>Seats Occupied</td>
-                <td>Book Flight</td>
-              </tr>
-            </thead>
-        </table> 
-      <?php  
-  }
-
-  //logout. 
-  if(isset($_GET['logout'])) {
-    echo "<script type=\"text/javascript\"> window.location = \"index.php\" </script>";
-  }
-
-  //get
-  function GET($k) {
-      return isset($_GET[$k]) ? $_GET[$k] : null;
-  }
-  //Post
-  function POST($k) {
-      return isset($_POST[$k]) ? $_POST[$k] : null;
-  }
-
-?>
-
-<!-- Date picker -->
- <div class="flights-table"></div>
-    <script> 
-      $(function(){ 
-        $( "#dp" ).datepicker({ altFormat: "yy-mm-dd" });
-        $( "#dp2" ).datepicker({ altFormat: "yy-mm-dd" });
-      }); 
-    </script> 
-
-    <script> 
-      $(".my-first-link").click(function() {
-        window.location = $(this).find("a").attr("href"); 
-        return false;
-      });
-    </script> 
-
-</div>
-
-
-</body>
-</html> -->

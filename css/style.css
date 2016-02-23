@@ -1,0 +1,46 @@
+/*!
+ * Style.css for CS89 Project
+ * Team 1
+ * Shivang Sethi, Taeho Sung, Shawn Xie, Kelley Lin, Dongjun Suh
+ * Copyright CS89.01 Team1 All Rights Reserved. 
+ */
+
+.btn .btn-default .btn-search {
+	border:0;
+	background:transparent;
+}
+
+.green-bkgrd {
+	background-color:#1A5417;
+}
+
+.green-pfont {
+	color: #1A5417;
+}
+
+.green-pfont .green-pfont-bold {
+	font-weight:bold;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: hsla(117,16%,43%,.40);
+   border: 2px solid green;
+ }
+ 
+.table-striped>tbody>tr:nth-child(even)>td, 
+.table-striped>tbody>tr:nth-child(even)>th {
+   background-color:hsla(0,0%,97%,.90);
+   border: 2px solid green;
+ }
+ 
+.greenH3 {
+	 color:hsla(117,58%,13%,1.00);
+	 font-weight:bolder;
+ }
+ 
+.greenP {
+	 color:hsla(117,58%,13%,1.00);
+	 font-weight:bold;
+ }
+ 
