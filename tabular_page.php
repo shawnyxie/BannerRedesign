@@ -39,6 +39,7 @@ $(function(){
   }, 5);
 
 });
+
 </script>
 
 
@@ -141,7 +142,8 @@ $(function(){
         </div>
       <div class="col-md-10">
           <div class="row" style="display:inline-block;">
-          <ul class="nav nav-tabs text-center" float="left" style="display:inline-block; font-weight:bolder; font-size:16px">
+
+          <ul class="nav nav-tabs text-center" id="interest_tabs" float="left" style="display:inline-block; font-weight:bolder; font-size:16px">
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_schedule">My<br/>Schedule</a></li>
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_degree" text-align="center">My<br/>Degree</a></li>
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_financial" text-align="center">My<br/>Financials</a></li>
@@ -153,23 +155,35 @@ $(function(){
           </ul>
           <div class="tab-content" style="background-color:hsla(117,24%,82%,1.00)">
               <div id="tab_schedule" class="tab-pane">
-                  <h3>Schedule</h3>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Current schedule goes here</p>
               </div>
             
               <div id="tab_degree" class="tab-pane">
-                  <h3>Degree</h3>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p> 
+                  <ul class="nav nav-tabs" id="degree_nav">
+                    <li><a href="#official_transcript" data-toggle="tab">official transcript</a></li>
+                    <li><a href="#unofficial_transcript_web" data-toggle="tab">unofficial transcript (web)</a></li>
+                    <li><a href="#unofficial_transcript_pdf" data-toggle="tab">unofficial transcript (pdf)</a></li>
+                    <li><a href="#degree_application" data-toggle="tab">degree application</a></li>
+                    <li><a href="#grades_by_term" data-toggle="tab">grades_by_term</a></li>
+                  </ul>
               </div>
             
               <div id="tab_financial" class="tab-pane">
-                  <h3>Financial</h3>
-                  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  <ul class="nav nav-tabs" id="financial_nav">
+                    <li><a href="#financial_aid_menu" data-toggle="tab">financial aid menu</a></li>
+                    <li><a href="#dash_account" data-toggle="tab">dash card</a></li>
+                    <li><a href="#d_pay" data-toggle="tab">d pay</a></li>
+                    <li><a href="#financial_authorization" data-toggle="tab">financial authorization</a></li>
+                    <li><a href="#tuition_statement" data-toggle="tab">tuition statement</a></li>
+                  </ul>
               </div>
             
               <div id="tab_housing" class="tab-pane">
-                  <h3>Housing</h3>
-                  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                  <ul class="nav nav-tabs" id="housing_nav">
+                    <li><a href="#room_assignment" data-toggle="tab">housing-room assignment</a></li>
+                    <li><a href="#condition_form" data-toggle="tab">housing-condition form</a></li>
+                    <li><a href="#star_portal" data-toggle="tab">star portal</a></li>
+                  </ul>
               </div>
             
               <div id="tab_student" class="tab-pane">
@@ -190,8 +204,68 @@ $(function(){
               <div id="tab_help" class="tab-pane">
                   <h3>Need Help?</h3>
                   <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-              </div>  
+              </div>
+
           </div>
+              <div class="tab-content">
+                <div id="financial_aid_menu" class="tab-pane">
+                  <p>financial aid menu</p>
+                </div>
+
+                <div id="dash_account" class="tab-pane">
+                  <p>dash account</p>
+                </div>
+
+                <div id="d_pay" class="tab-pane">
+                  <p>d-pay</p>
+                </div>
+
+                <div id="financial_authorization" class="tab-pane">
+                  <p>finanacial authorization</p>
+                </div>
+
+                <div id="tuition_statement" class="tab-pane">
+                  <p>tuition statement</p>
+                </div>
+
+              </div>
+
+              <div class="tab-content">
+                <div id="official_transcript" class="tab-pane">
+                  <p>official transcript</p>
+                </div>
+
+                <div id="unofficial_transcript_web" class="tab-pane">
+                  <p>unofficial transcript (web)</p>
+                </div>
+
+                <div id="unofficial_transcript_pdf" class="tab-pane">
+                  <p>unofficial transcript (pdf)</p>
+                </div>
+
+                <div id="degree_application" class="tab-pane">
+                  <p>degree application</p>
+                </div>
+
+                <div id="grades_by_term" class="tab-pane">
+                  <p>grades by term</p>
+                </div>
+              </div>
+
+              <div class="tab-content">
+                <div id="room_assignment" class="tab-pane">
+                  <p>room assignment</p>
+                </div>
+
+                <div id="condition_form" class="tab-pane">
+                  <p>condition form</p>
+                </div>
+
+                <div id="star_portal" class="tab-pane">
+                  <p>star portal</p>
+                </div>
+
+              </div>
           </div>
           </div>
       </div>
@@ -227,7 +301,22 @@ $(function(){
   </div>
 </footer>
 <!-- / FOOTER --> 
+<script>
+$('#interest_tabs').on('click', 'a[data-toggle="tab"]', function(e) {
+      e.preventDefault();
+      var $link = $(this);
 
+      if (!$link.parent().hasClass('active')) {
+        //remove active class from other tab-panes
+        $('.tab-content:not(.' + $link.attr('href').replace('#','') + ') .tab-pane').removeClass('active');
+        // click first submenu tab for active section
+        $('a[href="' + $link.attr('href') + '_all"][data-toggle="tab"]').click();
+        // activate tab-pane for active section
+        $('.tab-content.' + $link.attr('href').replace('#','') + ' .tab-pane:first').addClass('active');
+      }
+
+    });
+</script>
 
 </body>
 </html>
