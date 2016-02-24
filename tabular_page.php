@@ -43,7 +43,7 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a style="color:#F8F8F8; font-size:large" href="main_banner_page.php">Home <span class="sr-only">(current)</span></a> </li>
-        <li><a style="color:#F8F8F8; font-size:large" href="index.php">Logout</a> </li>
+        <li><a style="color:#F8F8F8; font-size:large" href="Logout.php">Logout</a> </li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 

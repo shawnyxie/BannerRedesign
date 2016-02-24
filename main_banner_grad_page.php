@@ -1,5 +1,20 @@
 <?php
 
+  // define('DB_HOST', 'sunapee.cs.dartmouth.edu');
+  // define('DB_USER', 'F000KHG');
+  // define('DB_PASS', 'lynbrookPARTY25'); //set DB_PASS as 'root' if you're using mac
+  // define('DB_DATABASE', 'F000KHG_db'); //make sure to set your database
+
+  //connect to database host
+  //$connection = mysql_connect(DB_HOST, DB_USER, DB_PASS);
+  //make sure connection works
+  //if(!$connection) { die("Error! SQL failure: " . mysql_error()); }
+  //mysql_select_db(DB_DATABASE, $connection);
+  //mysql_set_charset("utf8mb4");
+  //store username!
+  //$username = $_SESSION['user']; 
+  //Prob don't need this since we're already in employee. 
+  //$If_employee =  $_SESSION['If_employee'];
 ?>
 
 <!DOCTYPE html>
@@ -56,10 +71,9 @@
       <div class="col-md-3" style="width:250px">
          <div class="row" align="center">
          	<div class="row" style="margin:20px">
-              <img src="images/Taeho.png" width="200" height="230" alt="" style="margin-bottom:10px; border:5px solid black" align="left"/>
-              <p style="margin-top:10px; font-weight:bold" align="left">Name: Sung, Taeho </p>
-              <p style="font-weight:bold" align="left">Year: Class of 2017 </p>
-              <p style="font-weight:bold" align="left">Degree: Undergraduate</p>
+              <img src="images/Srinath.png" width="200" height="230" alt="" style="margin-bottom:10px; border:5px solid black" align="left"/>
+              <p style="margin-top:10px; font-weight:bold" align="left">Name: Ravichandran, Srinath </p>
+              <p style="font-weight:bold" align="left">Degree: Graduate PhD Candidate</p>
             </div>
       	 </div>
          <div class="row" style="margin-top:0px">

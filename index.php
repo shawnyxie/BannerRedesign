@@ -23,11 +23,11 @@
 	        //Depending on the returned value, we go to one of 3 webpages. 
 	        success: function(returned_value){
 	        	if (returned_value == 2) 
-		        	window.location.href = "employee.php";
+		        	window.location.href = "main_banner_grad_page.php";
 		        else if (returned_value == 1)
 		        	window.location.href = "main_banner_page.php";
 		        else if (returned_value == 0)
-							alert("gahhhhh");}
+					alert("Invalid Username or Password");}
 	      }); 
 		  }); 
 	  });
@@ -77,18 +77,19 @@
             </div>
             <div class="col-md-6" align="center">
             <div class="row" style="width:400px; margin-top:80px">
+            <form name="loginBox" target="#here" method="post">
               <div class="row" style="margin-top:0px;font-size:20px">
                   <label for="textfield" align="left" for="username" class="col-sm-5 control-label">Net ID:</label>
-                  <input name="username" type="username" class="form-control" id="textfield" maxlength="20" style="height:30px" placeholder="Net ID">
+                  <input name="username" type="username" class="form-control" id="username" maxlength="20" style="height:30px" placeholder="Net ID">
               </div>
               <div class="row" style="margin-top:10px;font-size:20px">
                   <label for="password" align="left" class="col-sm-5 control-label">Password:</label>
                   <input name="password" type="password" id="password" class="form-control" maxlength="20" style="height:30px" placeholder="Password">
-                </div>
               </div>
               <div class="row">
-                <a class="btn btn-primary btn-lg" id="LOGIN" value="LOGIN" role="button" style="margin-top:40px; background-color:#1A5417; border:hidden">Login</a>
+                <input type="submit" hidefocus="true" class="btn btn-primary btn-lg" id="LOGIN" value="Login" role="button" style="margin-top:40px; background-color:#1A5417; border:hidden"></a>
               </div>
+            </form>
               <div class="row" style="margin-top:10px">
               	<a style="color:#1A5417" href="http://tech.dartmouth.edu/its/services-support/help-yourself/netid-lookup">Need Net ID? (Applicants and First Time Users)</a>
               </div>
@@ -96,7 +97,7 @@
               	<a style="color:#1A5417" href="https://dartdm.dartmouth.edu/dartDM/PasswordReset">Forgot Password?</a>
               </div>
               <div class="row" style="margin-top:40px">
-              	<p style="color:hsla(0,0%,0%,1.00); font-size:14px; font-weight:bold">Important Security Information: Logging in to Banner lets you access other protected Dartmouth websites with this browser, not just the website you requested.</a>
+              	<p style="color:hsla(0,0%,0%,1.00); font-size:14px; font-weight:bold">Important Security Information: Logging in to Banner lets you access other protected Dartmouth websites with this browser, not just the website you requested.</p>
               </div>
        		</div>
       </div>
