@@ -23,7 +23,9 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Agency Template</title>
+<title>Dartmouth Student Portal</title>
+
+
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="css/bootstrap.css">
@@ -107,22 +109,22 @@
                 <caption style="color:#1A5417; font-weight:bolder; font-size:larger" align="center">Action Items</caption>
                 <tbody>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="https://google.com">google</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="facebook.com">facebook</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="amazon.com">amazon</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="google.com">google</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="google.com">google</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="google.com">google</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -131,7 +133,7 @@
     <div class="col-md-9" style="margin-left:65px; margin-top:100px; min-width:800px"> 
     <div class="row">
           <div class="col-xs-4">
-            <a href="tabular_page.php#schedule">
+            <a href="tabular_page.php#tab_schedule">
             <div align="center"> 
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Schedule.jpeg" data-holder-rendered="true">
               <h3 class="greenH3">Schedule</h3>
@@ -140,7 +142,7 @@
             </a>
            </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php">
+            <a href="tabular_page.php#tab_degree">
             <div  align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height:150px;" src="images/Degree.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Degree</h3>
@@ -149,7 +151,7 @@
             </a>
           </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php">
+            <a href="tabular_page.php#tab_financial">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Financials.png" data-holder-rendered="true">
               <h3 class="greenH3">Financials</h3>
@@ -160,7 +162,7 @@
        </div>
        <div class="row" style="margin-top:20px">
           <div class="col-xs-4">
-            <a href="tabular_page.php">
+            <a href="tabular_page.php#tab_housing">
             <div align="center"> 
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Housing.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Housing</h3>
@@ -169,7 +171,7 @@
             </a>
            </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php">
+            <a href="tabular_page.php#tab_student">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/StudentLife.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Student Life</h3>
@@ -178,7 +180,7 @@
             </a>
           </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php">
+            <a href="tabular_page.php#tab_course">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Courses.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Courses</h3>
@@ -189,7 +191,7 @@
        </div>
        <div class="row" style="margin-top:20px">
           <div class="col-xs-4">
-            <a href="tabular_page.php">
+            <a href="tabular_page.php#tab_frequent">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/FrequentLinks.jpeg" data-holder-rendered="true">
               <h3 class="greenH3">Quick Links</h3>
@@ -198,7 +200,7 @@
             </a>
            </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php">
+            <a href="tabular_page.php#tab">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/NeedHelp.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Need Help</h3>

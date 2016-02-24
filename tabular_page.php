@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Agency Template</title>
+<title>table page</title>
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="css/bootstrap.css">
@@ -21,6 +21,27 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<script>
+$(function(){
+  var url = document.location.toString();
+
+  console.log("test");
+  if (url.match('#')) {
+    $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+  }
+
+  setTimeout(function() {
+    $(window).scrollTop(0);
+  }, 5);
+
+});
+</script>
+
+
 </head>
 <body style="background-image:url('./images/DartmouthCampus.JPG'); background-repeat:no-repeat">
 <nav class="navbar navbar-default" style="margin-bottom:0px; background-color:#1A5417">
@@ -93,22 +114,22 @@
                 <caption style="color:#1A5417; font-weight:bolder; font-size:larger" align="center">Action Items</caption>
                 <tbody>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="https://google.com">google</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="facebook.com">facebook</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="amazon.com">amazon</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="google.com">google</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="google.com">google</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="google.com">google</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -121,52 +142,52 @@
       <div class="col-md-10">
           <div class="row" style="display:inline-block;">
           <ul class="nav nav-tabs text-center" float="left" style="display:inline-block; font-weight:bolder; font-size:16px">
-            <li><a style="color:#1A5417" data-toggle="tab" href="#schedule">My<br/>Schedule</a></li>
-            <li><a style="color:#1A5417" data-toggle="tab" href="#degree" text-align="center">My<br/>Degree</a></li>
-            <li><a style="color:#1A5417" data-toggle="tab" href="#financial" text-align="center">My<br/>Financials</a></li>
-            <li><a style="color:#1A5417" data-toggle="tab" href="#housing" text-align="center">My<br/>Housing</a></li>
-            <li><a style="color:#1A5417" data-toggle="tab" href="#student" text-align="center">Student<br/>Life</a></li>
-            <li><a style="color:#1A5417" data-toggle="tab" href="#course" text-align="center">My<br/>Courses</a></li>
-            <li><a style="color:#1A5417" data-toggle="tab" href="#frequent" text-align="center">Frequent<br/>Links</a></li>
-            <li><a style="color:#1A5417" data-toggle="tab" href="#help" text-align="center">Need<br/>Help?</a></li>
+            <li><a style="color:#1A5417" data-toggle="tab" href="#tab_schedule">My<br/>Schedule</a></li>
+            <li><a style="color:#1A5417" data-toggle="tab" href="#tab_degree" text-align="center">My<br/>Degree</a></li>
+            <li><a style="color:#1A5417" data-toggle="tab" href="#tab_financial" text-align="center">My<br/>Financials</a></li>
+            <li><a style="color:#1A5417" data-toggle="tab" href="#tab_housing" text-align="center">My<br/>Housing</a></li>
+            <li><a style="color:#1A5417" data-toggle="tab" href="#tab_student" text-align="center">Student<br/>Life</a></li>
+            <li><a style="color:#1A5417" data-toggle="tab" href="#tab_course" text-align="center">My<br/>Courses</a></li>
+            <li><a style="color:#1A5417" data-toggle="tab" href="#tab_frequent" text-align="center">Frequent<br/>Links</a></li>
+            <li><a style="color:#1A5417" data-toggle="tab" href="#tab_help" text-align="center">Need<br/>Help?</a></li>
           </ul>
           <div class="tab-content" style="background-color:hsla(117,24%,82%,1.00)">
-              <div id="schedule" class="tab-pane fade">
+              <div id="tab_schedule" class="tab-pane">
                   <h3>Schedule</h3>
                   <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
               </div>
             
-              <div id="degree" class="tab-pane fade">
+              <div id="tab_degree" class="tab-pane">
                   <h3>Degree</h3>
                   <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p> 
               </div>
             
-              <div id="financial" class="tab-pane fade">
+              <div id="tab_financial" class="tab-pane">
                   <h3>Financial</h3>
                   <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
               </div>
             
-              <div id="housing" class="tab-pane fade">
+              <div id="tab_housing" class="tab-pane">
                   <h3>Housing</h3>
                   <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
               </div>
             
-              <div id="student" class="tab-pane fade">
+              <div id="tab_student" class="tab-pane">
                   <h3>Student Life</h3>
                   <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
               </div>
             
-              <div id="course" class="tab-pane fade">
-                  <h3>FCourses</h3>
+              <div id="tab_course" class="tab-pane">
+                  <h3>Courses</h3>
                   <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
               </div>
             
-              <div id="frequent" class="tab-pane fade">
+              <div id="tab_frequent" class="tab-pane">
                   <h3>Frequent</h3>
                   <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
               </div>
             
-              <div id="help" class="tab-pane fade">
+              <div id="tab_help" class="tab-pane">
                   <h3>Need Help?</h3>
                   <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
               </div>  
@@ -206,9 +227,7 @@
   </div>
 </footer>
 <!-- / FOOTER --> 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-1.11.3.min.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.js"></script>
+
+
 </body>
 </html>
