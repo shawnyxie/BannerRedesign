@@ -290,18 +290,6 @@ $('#query').typeahead({
       onInit: function (node) {
         console.log('Typeahead Initiated on ' + node.selector);
       },
-
-      onClick: function () {
-        setTimeout(function() {
-          location.reload();
-        }, 5);
-      },
-
-      onSubmit: function() {
-        setTimeout(function() {
-          location.reload();
-        }, 5);
-      }
     }
 })
 </script>
