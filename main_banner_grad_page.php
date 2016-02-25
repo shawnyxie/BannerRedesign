@@ -71,57 +71,62 @@
       <div class="col-md-3" style="width:250px">
          <div class="row" align="center">
          	<div class="row" style="margin:20px">
-              <img src="images/Srinath.png" width="200" height="230" alt="" style="margin-bottom:10px; border:5px solid black" align="left"/>
+              <img src="images/Srinath.png" width="200" height="220" alt="" style="margin-bottom:15px; border:5px solid  hsla(117,57%,21%,.80)" align="left"/>
               <p style="margin-top:10px; font-weight:bold" align="left">Name: Ravichandran, Srinath </p>
               <p style="font-weight:bold" align="left">Degree: Graduate PhD Candidate</p>
             </div>
       	 </div>
-         <div class="row" style="margin-top:0px">
-              <table class="table table-striped" style="margin-left:0px; width:45">
-                <caption style="color:#1A5417; font-weight:bolder; font-size:larger">Recent Activities</caption>
-                <tbody>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                </tbody>
-              </table>
+                  <div class="row" style="margin-top:0px">
+           <table class="table table-striped" border="0px" width="200" style="margin-left:0px; width:45">
+              <thead>
+                <tr>
+                  <th>Recent Activities</th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
         </div>
         <div class="row" style="margin-top:0px">
-              <table class="table table-striped" width="200" style="margin-left:0px">
-                <caption style="color:#1A5417; font-weight:bolder; font-size:larger" align="center">Action Items</caption>
+           <table class="table table-striped" border="0px" width="200" style="margin-left:0px; width:45">
+              <thead>
+                <tr>
+                  <th>Action Items </th>
+                </tr>
+               </thead>
                 <tbody>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="https://google.com">google</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="facebook.com">facebook</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="amazon.com">amazon</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="google.com">google</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="google.com">google</a></td>
                   </tr>
                   <tr>
-                    <td>&nbsp;</td>
+                    <td><a href="google.com">google</a></td>
                   </tr>
                 </tbody>
               </table>

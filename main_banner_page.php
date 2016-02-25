@@ -10,8 +10,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dartmouth Student Portal</title>
 
-
-
 <!-- Bootstrap -->
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/style.css">
@@ -58,40 +56,45 @@
       <div class="col-md-3" style="width:250px">
          <div class="row" align="center">
          	<div class="row" style="margin:20px">
-              <img src="images/Taeho.png" width="200" height="230" alt="" style="margin-bottom:10px; border:5px solid black" align="left"/>
+              <img src="images/Taeho.png" width="200" height="220" alt="" style="margin-bottom:15px; border:5px solid  hsla(117,57%,21%,.80)" align="left"/>
               <p style="margin-top:10px; font-weight:bold" align="left">Name: Sung, Taeho </p>
               <p style="font-weight:bold" align="left">Year: Class of 2017 </p>
               <p style="font-weight:bold" align="left">Degree: Undergraduate</p>
             </div>
       	 </div>
          <div class="row" style="margin-top:0px">
-              <table class="table table-striped" style="margin-left:0px; width:45">
-                <caption style="color:#1A5417; font-weight:bolder; font-size:larger">Recent Activities</caption>
-                <tbody>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                </tbody>
-              </table>
+           <table class="table table-striped" border="0px" width="200" style="margin-left:0px; width:45">
+              <thead>
+                <tr>
+                  <th>Recent Activities</th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
         </div>
         <div class="row" style="margin-top:0px">
-              <table class="table table-striped" width="200" style="margin-left:0px">
-                <caption style="color:#1A5417; font-weight:bolder; font-size:larger" align="center">Action Items</caption>
+           <table class="table table-striped" border="0px" width="200" style="margin-left:0px; width:45">
+              <thead>
+                <tr>
+                  <th>Action Items </th>
+                </tr>
+               </thead>
                 <tbody>
                   <tr>
                     <td><a href="https://google.com">google</a></td>
