@@ -32,13 +32,14 @@
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+      <form class="navbar-form navbar-right" autocomplete="off" role="search">
+        <div class="typeahead-container">
+          <div class="typeahead-field">
+            <span class="query">
+              <input id="query" type="text" class="form-control" placeholder="Search" autocomplete="off">
+            </span>
+          </div>
         </div>
-        <button type="submit" class="btn btn-default btn-search" value="SEARCH">
-        	<img src="./images/search_button.jpg" width="15" height="15" alt="submit"/>
-        </button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a style="color:#F8F8F8; font-size:large" href="#">Home <span class="sr-only">(current)</span></a> </li>

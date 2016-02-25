@@ -25,7 +25,7 @@
 .table>thead{
 	background-color:hsla(117,57%,21%,1.00);
 	color:white;
-	font-size:larger;
+	font-size:large;
  }
  
 .table-striped>thead>tr>th{
