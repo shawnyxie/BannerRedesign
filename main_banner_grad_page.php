@@ -72,11 +72,21 @@
          <div class="row" align="center">
          	<div class="row" style="margin:20px">
               <img src="images/Srinath.png" width="200" height="220" alt="" style="margin-bottom:15px; border:5px solid  hsla(117,57%,21%,.80)" align="left"/>
-              <p style="margin-top:10px; font-weight:bold" align="left">Name: Ravichandran, Srinath </p>
-              <p style="font-weight:bold" align="left">Degree: Graduate PhD Candidate</p>
+              <div class="row" align="center">
+                  <div class="col-md-3" align="center" style="border-top:2px dotted #1A5417; border-bottom:2px dotted #1A5417">
+                    <span style="width:50%; font-weight:bold; color:#1A5417"> Name: </span> <br/>
+                    <span style="width:50%; font-weight:bold; color:#1A5417"> Year: </span> <br/>
+                    <span style="width:50%; font-weight:bold; color:#1A5417"> Degree: </span> <br/>
+                  </div>
+                  <div class="col-md-9" align="left" style="border-top:2px dotted #1A5417; border-bottom:2px dotted #1A5417">
+                    <span style="width:50%; font-weight:bold; color:#1A5417"> Ravichandran, Srinath </span> <br/>
+                    <span style="width:50%; font-weight:bold; color:#1A5417"> PhD, 2nd Year </span> <br/>
+                    <span style="width:50%; font-weight:bold; color:#1A5417"> Graduate </span>
+                  </div>
+                </div>
             </div>
       	 </div>
-         <div class="row" style="margin-top:0px">
+         <div class="row" style="margin-top:15px">
           <table class="table" border="0px" width="250" style="margin-left:0px; width:45">
               <thead>
                 <tr>
@@ -85,19 +95,19 @@
                </thead>
                <tbody>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://google.com" style="color:black">Grades By Term</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="tabular_page.php#grades_by_term" style="color:black">Grades By Term</a></td>
               </tr>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://reslife.dartmouth.edu/StarRezPortal/Default.aspx?Params=L9ezxPcQnQuRGKTzF%2b4sxdIcsWEQNaHhlMKz6FX0gDI%3d" style="color:black">Financial Aid</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="tabular_page.php#award_letter" style="color:black">Financial Aid</a></td>
               </tr>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://google.com" style="color:black">Schedule</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="#" style="color:black">Schedule</a></td>
               </tr>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://google.com" style="color:black">Course Offerings</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="#" style="color:black">Course Offerings</a></td>
               </tr>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://reslife.dartmouth.edu/StarRezPortal/Default.aspx?Params=L9ezxPcQnQuRGKTzF%2b4sxdIcsWEQNaHhlMKz6FX0gDI%3d" style="color:black">Pass-Fail Option</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="#" style="color:black">Pass-Fail Option</a></td>
               </tr>
               </tbody>
             </table>
@@ -129,65 +139,65 @@
     <div class="col-md-9" style="margin-left:65px; margin-top:100px; min-width:800px"> 
     <div class="row">
           <div class="col-xs-4">
-            <a href="tabular_page.php#schedule">
+            <a href="tabular_page.php#tab_schedule">
             <div align="center"> 
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Schedule.jpeg" data-holder-rendered="true">
               <h3 class="greenH3">Schedule</h3>
-              <p class="greenP">View My Term Schedule</p>
+              <p class="greenP">View My Term and Weekly Schedule</p>
             </div>
             </a>
            </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php">
+            <a href="tabular_page.php#tab_degree">
             <div  align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height:150px;" src="images/Degree.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Degree</h3>
-              <p class="greenP">Degree, Grades, Transcript</p>
+              <p class="greenP">Degree, Enrollment, Grades, Transcript</p>
             </div>
             </a>
           </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php">
+            <a href="tabular_page.php#tab_financial">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Financials.png" data-holder-rendered="true">
               <h3 class="greenH3">Financials</h3>
-              <p class="greenP">Financial Aid, D-Pay, Tuition</p>
+              <p class="greenP">Dash, D-Pay, Financial Aid, Tuition</p>
             </div>
             </a>
           </div>
        </div>
        <div class="row" style="margin-top:20px">
           <div class="col-xs-4">
-            <a href="tabular_page.php">
+            <a href="tabular_page.php#tab_housing">
             <div align="center"> 
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Housing.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Housing</h3>
-              <p class="greenP">Student Housing</p>
+              <p class="greenP">Housing Assignment and Portal</p>
             </div>
             </a>
            </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php">
+            <a href="tabular_page.php#tab_student">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/StudentLife.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Student Life</h3>
-              <p class="greenP"> Check-in, Cards</p>
+              <p class="greenP">Student Information and Activities</p>
             </div>
             </a>
           </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php">
+            <a href="tabular_page.php#tab_course">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Courses.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Courses</h3>
-              <p class="greenP">Registration</p>
+              <p class="greenP">Registration, Pass/Fail, Course Assessment</p>
             </div>
             </a>
           </div>
        </div>
        <div class="row" style="margin-top:20px">
           <div class="col-xs-4">
-            <a href="tabular_page.php">
+            <a href="tabular_page.php#tab_frequent">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/FrequentLinks.jpeg" data-holder-rendered="true">
               <h3 class="greenH3">Quick Links</h3>
@@ -196,7 +206,7 @@
             </a>
            </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php">
+            <a href="tabular_page.php#tab">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/NeedHelp.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Need Help</h3>
@@ -210,8 +220,8 @@
                   <img class="img-circle" alt="200x200" style="width: 150px; height: 150px; margin-top:10px" src="images/Canvas.jpeg" data-holder-rendered="true">
                 </div>
                 </a>
-            </div>
-            </div>
+          </div>
+          </div>
      </div>
          </div>
      

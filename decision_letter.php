@@ -132,8 +132,8 @@ $(function(){
                 <li><a style="color:#1A5417" data-toggle="tab" href="#personal_information" text-align="center">Personal Information</a></li>
                 <li><a style="color:#1A5417" data-toggle="tab" href="#international_student" text-align="center">International Student</a></li>
               </ul>
-              <div class="tab-content" style="background-color: white; color:#1A5417; margin-top:0px; color:black; background-color:white; margin-bottom:20px">
-                  <div id="my_decision_letter" class="tab-pane" style=" max-height:1000px; color:#1A5417;padding:50px">
+              <div class="tab-content" style="color:#1A5417; margin-top:0px; color:black; margin-bottom:20px">
+                  <div id="my_decision_letter" class="tab-pane" style=" max-height:1000px; color:#1A5417;padding:50px; background-color:white">
                     <p>
                     Dear Srinath<br/><br/>
                     
@@ -155,7 +155,27 @@ $(function(){
                     </div>
                 
                   <div id="my_financial_aid" class="tab-pane">
-                    <p>Financial Aid</p>
+                  <div class="row text-center" style="background-color:none">
+                  	<p style="font-weight:bold; color:hsla(117,57%,21%,1.00); margin-top:15px; margin-bottom:30px;font-size:larger">My Financial Aid Award</p>
+                  </div>
+                  <div class="col-md-9">
+                    <div class="row">
+                      <div class="col-md-6" align="center">
+                        <div class="dropdown btn-group">
+                            <a class="btn dropdown-toggle" style="background-color:hsla(117,57%,21%,1.00); color:white" data-toggle="dropdown" href="#">
+                                Choose Academic Year
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">2016 - 2017</a></li>
+                            </ul>
+                         </div> 
+                      </div>
+                      <div class="col-md-6" align="center">
+                        <img src="images/award_letter.png" align="center" width="300"></img>
+                      </div>
+                    </div>
+                  </div>
                   </div>
                 
                   <div id="personal_information" class="tab-pane">

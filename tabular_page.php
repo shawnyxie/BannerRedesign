@@ -92,12 +92,21 @@ function saveDplan() {
          <div class="row" align="center">
          	<div class="row" style="margin:20px">
               <img src="images/Taeho.png" width="200" height="220" alt="" style="margin-bottom:15px; border:5px solid  hsla(117,57%,21%,.80)" align="left"/>
-              <p style="margin-top:10px; font-weight:bold" align="left">Name: Sung, Taeho </p>
-              <p style="font-weight:bold" align="left"> Year: Class of 2017 </p>
-              <p style="font-weight:bold" align="left"> Degree: Undergraduate</p>
-            </div>
-      	 </div>
-         <div class="row" style="margin-top:0px">
+              	<div class="row" align="center">
+                  <div class="col-md-3" align="center" style="border-top:2px dotted #1A5417; border-bottom:2px dotted #1A5417">
+                    <span style="width:40%; font-weight:bold; color:#1A5417"> Name: </span> <br/>
+                    <span style="width:40%; font-weight:bold; color:#1A5417"> Year: </span> <br/>
+                    <span style="width:40%; font-weight:bold; color:#1A5417"> Degree: </span> <br/>
+                  </div>
+                  <div class="col-md-9" align="left" style="border-top:2px dotted #1A5417; border-bottom:2px dotted #1A5417">
+                    <span style="width:80%; font-weight:bold; color:#1A5417"> Sung, Taeho </span> <br/>
+                    <span style="width:80%; font-weight:bold; color:#1A5417"> Class of 2017 </span> <br/>
+                    <span style="width:80%; font-weight:bold; color:#1A5417"> Undergraduate </span>
+                  </div>
+                </div>
+                </div>
+      		 </div>
+         <div class="row" style="margin-top:15px">
            <table class="table" border="0px" width="250" style="margin-left:0px; width:45">
               <thead>
                 <tr>
@@ -106,10 +115,10 @@ function saveDplan() {
                </thead>
                <tbody>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://google.com" style="color:black">Grades By Term</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="tabular_page.php#grades_by_term" style="color:black">Grades By Term</a></td>
               </tr>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://reslife.dartmouth.edu/StarRezPortal/Default.aspx?Params=L9ezxPcQnQuRGKTzF%2b4sxdIcsWEQNaHhlMKz6FX0gDI%3d" style="color:black">Financial Aid</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="tabular_page.php#award_letter" style="color:black">Financial Aid</a></td>
               </tr>
               <tr>
                 <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://google.com" style="color:black">Schedule</a></td>
@@ -163,40 +172,40 @@ function saveDplan() {
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_course" text-align="center">My<br/>Courses</a></li>
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_frequent" text-align="center">Frequent<br/>Links</a></li>
           </ul>
-          <div class="tab-content" style="background-color: white; margin-top:0px; color:black">
+          <div class="tab-content" style="background-color: white; margin-top:0px; color:black; max-width:725px">
               <div id="tab_schedule" class="tab-pane">
                 <p>Current schedule goes here</p>
               </div>
             
               <div id="tab_degree" class="tab-pane">
                   <ul class="nav nav-tabs" id="degree_nav">
-                    <li><a href="#official_transcript" data-toggle="tab" style="color:black; outline:none; border:0">official transcript</a></li>
-                    <li><a href="#unofficial_transcript" data-toggle="tab" style="color:black;outline:none; border:0">unofficial transcript</a></li>
-                    <li><a href="#degree_application" data-toggle="tab" style="color:black;outline:none; border:0">degree application</a></li>
-                    <li><a href="#grades_by_term" data-toggle="tab" style="color:black;outline:none; border:0">grades by term</a></li>
-                    <li><a href="#degree_work" data-toggle="tab" style="color:black;outline:none; border:0">degree work</a></li>
+                    <li><a href="#official_transcript" data-toggle="tab" style="color:black; outline:none; border:0">Official Transcript</a></li>
+                    <li><a href="#unofficial_transcript" data-toggle="tab" style="color:black;outline:none; border:0">Unofficial Transcript</a></li>
+                    <li><a href="#degree_application" data-toggle="tab" style="color:black;outline:none; border:0">Degree Application</a></li>
+                    <li><a href="#grades_by_term" data-toggle="tab" style="color:black;outline:none; border:0">Grades by Term</a></li>
+                    <li><a href="#degree_work" data-toggle="tab" style="color:black;outline:none; border:0">Degree Works</a></li>
                     <li><a href="#major_minor" data-toggle="tab" style="color:black;outline:none; border:0">Major Minor</a></li>
-                    <li><a href="#verify_enrollment" data-toggle="tab" style="color:black;outline:none; border:0">verify enrollment</a></li>
+                    <li><a href="#verify_enrollment" data-toggle="tab" style="color:black;outline:none; border:0">Verify Enrollment</a></li>
                   </ul>
               </div>
             
               <div id="tab_financial" class="tab-pane">
                   <ul class="nav nav-tabs" id="financial_nav">
-                    <li><a href="#financial_aid_application" data-toggle="tab" style="color:black;outline:none; border:0">apply for financial aid</a></li>
-                    <li><a href="#award_letter" data-toggle="tab" style="color:black;outline:none; border:0">financial aid award</a></li>
-                    <li><a href="#financial_aid_status" data-toggle="tab" style="color:black;outline:none; border:0">financial aid status</a></li>
-                    <li><a href="#dash_account" data-toggle="tab" style="color:black;outline:none; border:0">dash card</a></li>
-                    <li><a href="#d_pay" data-toggle="tab" style="color:black;outline:none; border:0">d pay</a></li>
-                    <li><a href="#financial_authorization" data-toggle="tab" style="color:black;outline:none; border:0">financial authorization</a></li>
-                    <li><a href="#tuition_statement" data-toggle="tab" style="color:black;outline:none; border:0">tuition statement</a></li>
+                    <li><a href="#financial_aid_application" data-toggle="tab" style="color:black;outline:none; border:0">Apply for Financial Aid</a></li>
+                    <li><a href="#award_letter" data-toggle="tab" style="color:black;outline:none; border:0">Financial Aid Award</a></li>
+                    <li><a href="#financial_aid_status" data-toggle="tab" style="color:black;outline:none; border:0">Financial Aid Status</a></li>
+                    <li><a href="#dash_account" data-toggle="tab" style="color:black;outline:none; border:0">Dash Card</a></li>
+                    <li><a href="#d_pay" data-toggle="tab" style="color:black;outline:none; border:0">D-Pay</a></li>
+                    <li><a href="#financial_authorization" data-toggle="tab" style="color:black;outline:none; border:0">Financial Authorization</a></li>
+                    <li><a href="#tuition_statement" data-toggle="tab" style="color:black;outline:none; border:0">Tuition Statement</a></li>
                   </ul>
               </div>
             
               <div id="tab_housing" class="tab-pane">
                   <ul class="nav nav-tabs" id="housing_nav">
-                    <li><a href="#room_assignment" data-toggle="tab" style="color:black;outline:none; border:0">housing-room assignment</a></li>
-                    <li><a href="#condition_form" data-toggle="tab" style="color:black;outline:none; border:0">housing-condition form</a></li>
-                    <li><a href="#star_portal" data-toggle="tab" style="color:black;outline:none; border:0">star portal</a></li>
+                    <li><a href="#room_assignment" data-toggle="tab" style="color:black;outline:none; border:0">Housing-Room Assignment</a></li>
+                    <li><a href="#condition_form" data-toggle="tab" style="color:black;outline:none; border:0">Housing-Condition Form</a></li>
+                    <li><a href="#star_portal" data-toggle="tab" style="color:black;outline:none; border:0">Star Portal</a></li>
                   </ul>
               </div>
             
@@ -226,94 +235,144 @@ function saveDplan() {
                   <h3>Frequent</h3>
                   <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
               </div>
-            
-
           </div>
               <div class="tab-content">
                 <div id="financial_aid_application" class="tab-pane">
-                  <p>financial aid application</p>
+                  <p>Financial Aid Application</p>
                 </div>
 
                 <div id="award_letter" class="tab-pane">
-                  <p>financial aid award</p>
-                  <div class="row">
-                    <div class="dropdown btn-group">
-                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                            Choose Academic Year
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">2015 - 2016</a></li>
-                            <li><a href="#">2014 - 2015</a></li>
-                        </ul>
+                  <div class="row text-center">
+                  	<p style="font-weight:bold; color:hsla(117,57%,21%,1.00); margin-top:15px; margin-bottom:30px;font-size:larger">My Financial Aid Award</p>
+                  </div>
+                  <div class="col-md-9">
+                    <div class="row">
+                      <div class="col-md-4" align="center">
+                        <div class="dropdown btn-group">
+                            <a class="btn dropdown-toggle" style="background-color:hsla(117,57%,21%,1.00); color:white" data-toggle="dropdown" href="#">
+                                Choose Academic Year
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">2015 - 2016</a></li>
+                                <li><a href="#">2014 - 2015</a></li>
+                            </ul>
+                         </div> 
+                      </div>
+                      <div class="col-md-1"></div>
+                      <div class="col-md-7 text-center" align="center">
+                        <img src="images/award_letter.png" align="center" width="450" style="margin-bottom:50px"></img>
+                      </div>
                     </div>
                   </div>
-                  <br/>
-                  <br/>
-                  <img src="images/award_letter.jpeg" height="1000"></img>
                 </div>
 
                 <div id="financial_aid_status" class="tab-pane">
-                  <p>financial aid status</p>
+                  <p>Financial Aid Status</p>
                 </div>
 
                 <div id="dash_account" class="tab-pane">
-                  <p>dash account</p>
+                  <p>Dash Account</p>
                 </div>
 
                 <div id="d_pay" class="tab-pane">
-                  <p>d-pay</p>
+                  <p>D-Pay</p>
                 </div>
 
                 <div id="financial_authorization" class="tab-pane">
-                  <p>finanacial authorization</p>
+                  <p>Finanacial Authorization</p>
                 </div>
 
                 <div id="tuition_statement" class="tab-pane">
-                  <p>tuition statement</p>
+                  <p>Tuition Statement</p>
                 </div>
 
               </div>
 
               <div class="tab-content">
                 <div id="official_transcript" class="tab-pane">
-                  <p>official transcript</p>
+                  <p>Official Transcript</p>
                 </div>
 
                 <div id="unofficial_transcript" class="tab-pane">
-                  <p>unofficial transcript</p>
+                  <p>Unofficial Transcript</p>
                 </div>
 
                 <div id="degree_application" class="tab-pane">
-                  <p>degree application</p>
+                  <p>Degree Application</p>
                 </div>
 
-                <div id="grades_by_term" class="tab-pane">
-                  <p>grades by term</p>
-                  <div class="row">
-                    <div class="dropdown btn-group">
-                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                            Choose a term
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Fall 2015</a></li>
-                            <li><a href="#">Spring 2015</a></li>
-                            <li><a href="#">Winter 2015</a></li>
-                            <li><a href="#">Fall 2014</a></li>
-                            <li><a href="#">Spring 2014</a></li>
-                            <li><a href="#">Winter 2014</a></li>
-                            <li><a href="#">Fall 2013</a></li>
-                        </ul>
+                <div id="grades_by_term" class="tab-pane text-center">
+                  <div class="row" style="margin-top:50px">
+                    <div class="col-md-3 text-center">
+                        <div class="dropdown btn-group">
+                            <a class="btn dropdown-toggle" style="background-color:hsla(117,57%,21%,1.00); color:white; margin-left:0px; margin-right:0px" data-toggle="dropdown" href="#">
+                                Choose a Term
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Fall 2015</a></li>
+                                <li><a href="#">Spring 2015</a></li>
+                                <li><a href="#">Winter 2015</a></li>
+                                <li><a href="#">Fall 2014</a></li>
+                                <li><a href="#">Spring 2014</a></li>
+                                <li><a href="#">Winter 2014</a></li>
+                                <li><a href="#">Fall 2013</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9 text-center">
+                  		 <div class="row" style="margin-right:0px">
+                         <p style="font-size:larger; font-weight:bolder; color:hsla(117,57%,21%,1.00); margin-bottom:20px">Grades By Term</p>
+                    <table class="table table-striped" border="0px" width="500" style="margin-left:0px">
+                      <thead>
+                        <tr>
+                            <th width="20%"><p style="color:black; font-weight:bold; border-right:none; border-left:none; color:white">Department</p></th>
+                            <th width="20%"><p style="color:black; font-weight:bold; border-right:none; border-left:none; color:white">Course ID</p></th>
+                            <th width="20%"><p style="color:black; font-weight:bold; border-right:none; border-left:none; color:white">Title</p></th>
+                            <th width="20%"><p style="color:black; font-weight:bold; border-right:none; border-left:none; color:white">Grade</p></th>
+                            <th width="20%"><p style="color:black; font-weight:bold; border-right:none; border-left:none; color:white">Median</p></th>
+                        </tr>
+                       </thead>
+                        <tbody>                         
+                          <tr>
+                            <td width="20%"><p style="color:black; border-right:none; border-left:none;">ECON</p></td>
+                            <td width="20%"><p style="color:black; border-right:none; border-left:none;">020</p></td>
+                            <td width="20%"><p style="color:black; border-right:none; border-left:none;">Econometrics</p></td>
+                            <td width="20%"><p style="color:black; border-right:none; border-left:none;">A-</button></p></td>
+                            <td width="20%"><p style="color:black; border-right:none; border-left:none;">B</p></td>
+                          </tr>
+                          <tr>
+                            <td width="20%"><p style="color:black; border-right:none; border-left:none;">COSC</p></td>
+                            <td width="20%"><p style="color:black; border-right:none; border-left:none;">057</p></td>
+                            <td width="20%"><p style="color:black; border-right:none; border-left:none;">Compilers</p></td>
+                            <td width="20%"><p style="color:black; border-right:none; border-left:none;">B+</button></p></td>
+                            <td width="20%"><p style="color:black; border-right:none; border-left:none;">C+</p></td>
+                          </tr>
+                          <tr>
+                            <td width="20%"><p style="color:black;">COSC</p></td>
+                            <td width="20%"><p style="color:black;">089</p></td>
+                            <td width="20%"><p style="color:black;">HCI</p></td>
+                            <td width="20%"><p style="color:black;">A</button></p></td>
+                            <td width="20%"><p style="color:black;">B+</p></td>
+                          </tr>
+
+                          <tr>
+                            <td width="20%"><p style="color:black;">P.E.</p></td>
+                            <td width="20%"><p style="color:black;">032</p></td>
+                            <td width="20%"><p style="color:black;">Snowboarding</p></td>
+                            <td width="20%"><p style="color:black;">Pass</button></p></td>
+                            <td width="20%"><p style="color:black;"></p></td>
+                          </tr>
+                        </tbody>
+                      </table>   
+                  </div>                 
                     </div>
                   </div>
-                  <br/>
-                  <br/>
-                  <img src="images/grades.jpeg" height="400"></img>
                 </div>
 
                 <div id="degree_work" class="tab-pane">
-                  <p>degree work</p>
+                  <p>Degree Work</p>
                 </div>
 
                 <div id="major_minor" class="tab-pane">
@@ -328,15 +387,15 @@ function saveDplan() {
 
               <div class="tab-content">
                 <div id="room_assignment" class="tab-pane">
-                  <p>room assignment</p>
+                  <p>Room Assignment</p>
                 </div>
 
                 <div id="condition_form" class="tab-pane">
-                  <p>condition form</p>
+                  <p>Condition Form</p>
                 </div>
 
                 <div id="star_portal" class="tab-pane">
-                  <p>star portal</p>
+                  <p>Star Portal</p>
                 </div>
               </div>
 
@@ -368,26 +427,27 @@ function saveDplan() {
                 </div>
 
                 <div id="d_plan" class="tab-pane">
-                  <p>D-Plan</p>
-                  <p>Please note: Only certain changes to your D-Plan can be done online. 
+                  <div class="text-center">
+                  <p style="font-weight:bold; color:hsla(117,57%,21%,1.00); margin-top:15px; font-size:larger">My D-Plan</p>
+                  </div>
+                  <p style="font-size:bold">Please note: Only certain changes to your D-Plan can be done online. 
                   Some changes are not allowed or may be approved by petition to the Registrar. 
                   Please contact Registrar@dartmouth.edu if you have further questions or information. 
                   These include: </p>
 
                   <ul>
-                    <li>Five year or more enrollment pattern</li>
-                    <li>Delay or waiver of Sophomore Summer</li>
-                    <li>More than 12 terms</li>
-                    <li>Waiver of senior residency</li>
+                    <li style="font-size:bold">Five year or more enrollment pattern</li>
+                    <li style="font-size:bold">Delay or waiver of Sophomore Summer</li>
+                    <li style="font-size:bold">More than 12 terms</li>
+                    <li style="font-size:bold">Waiver of senior residency</li>
                   </ul>
-                  <br/>
                   <br/>
 
                   <div class="row">
                     <table class="table" border="0px" width="500" style="margin-left:0px; width:45">
                       <thead>
                         <tr>
-                          <th colspan="5">D-Plan</th>
+                          <th colspan="5"></th>
                         </tr>
                        </thead>
                         <tbody>
@@ -427,22 +487,18 @@ function saveDplan() {
                             <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2" disabled="true" style="background-color:white; border:none; outline:none">R</button></p></td>
                           </tr>
                         </tbody>
-                      </table>
-                    
-                    
-                  </div>
-                  
+                      </table>   
+                  </div>                 
                   <br/>
                   <br/>
 
-                  <p>Note: International students are recommended to take three consecutive terms on before taking an off term
+                  <p style="font-size:bold">Note: International students are recommended to take three consecutive terms on before taking an off term
                   If planning to make any changes that violate this, please contact the Office of Visa and Immigrations Services
-                  (Visa.and.Immigrations.Services@dartmouth.edu)</p>
-
-                  <br/>
-                  <button class="submit" margin-bottom="20px" onclick="saveDplan()" style="background-color:hsla(117,57%,21%,1.00); color:white;border:none; outline:none">Save Change</button>
-                  <br/>
-                  <p></p>
+                  (Visa.and.Immigrations.Services@dartmouth.edu)</p><br/>
+                  
+				  <div class="text-right" style="margin-bottom:40px">
+                  <button class="submit" onclick="saveDplan()" style="background-color:hsla(117,57%,21%,1.00); color:white;border:none; outline:none; margin-right:50px">Save Change</button>
+                  </div>
                 </div>
 
                 <div id="schedule_rooms" class="tab-pane">
