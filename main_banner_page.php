@@ -13,7 +13,6 @@
 <!-- Bootstrap -->
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/jquery.typeahead.css">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,13 +20,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="https://code.jquery.com/jquery-1.11.3.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.js"></script>
-<script src="js/jquery.typeahead.js"></script>
-
-
 </head>
 <body style="background-image:url('./images/DartmouthCampus.JPG'); background-repeat:no-repeat">
 <nav class="navbar navbar-default" style="margin-bottom:0px; background-color:#1A5417">
@@ -40,17 +32,13 @@
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-right" autocomplete="off" role="search">
-        <div class="typeahead-container">
-          <div class="typeahead-field">
-            <span class="query">
-              <input id="query" type="text" class="form-control" placeholder="Search" autocomplete="off">
-            </span>
-              <button type="submit" value="SEARCH">
-              	<img src="./images/search_button.jpg" width="15" height="15" alt="submit"/>
-              </button>
-          </div>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
         </div>
+        <button type="submit" class="btn btn-default btn-search" value="SEARCH">
+        	<img src="./images/search_button.jpg" width="15" height="15" alt="submit"/>
+        </button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a style="color:#F8F8F8; font-size:large" href="#">Home <span class="sr-only">(current)</span></a> </li>
@@ -74,57 +62,51 @@
               <p style="font-weight:bold" align="left">Degree: Undergraduate</p>
             </div>
       	 </div>
-         <div class="row" style="margin-top:0px">
-           <table class="table table-striped" border="0px" width="200" style="margin-left:0px; width:45">
+        <div class="row" style="margin-top:0px">
+        	<table class="table" border="0px" width="250" style="margin-left:0px; width:45">
               <thead>
                 <tr>
                   <th>Recent Activities</th>
                 </tr>
                </thead>
                <tbody>
-                <tr>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                </tr>
+              <tr>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://google.com" style="color:black">Grades By Term</a></td>
+              </tr>
+              <tr>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://reslife.dartmouth.edu/StarRezPortal/Default.aspx?Params=L9ezxPcQnQuRGKTzF%2b4sxdIcsWEQNaHhlMKz6FX0gDI%3d" style="color:black">Financial Aid</a></td>
+              </tr>
+              <tr>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://google.com" style="color:black">Schedule</a></td>
+              </tr>
+              <tr>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://google.com" style="color:black">Course Offerings</a></td>
+              </tr>
+              <tr>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://reslife.dartmouth.edu/StarRezPortal/Default.aspx?Params=L9ezxPcQnQuRGKTzF%2b4sxdIcsWEQNaHhlMKz6FX0gDI%3d" style="color:black">Pass-Fail Option</a></td>
+              </tr>
               </tbody>
             </table>
         </div>
         <div class="row" style="margin-top:0px">
-           <table class="table table-striped" border="0px" width="200" style="margin-left:0px; width:45">
+           <table class="table" border="0px" width="250" style="margin-left:0px; width:45">
               <thead>
                 <tr>
-                  <th>Action Items </th>
+                  <th colspan="2">Action Items </th>
                 </tr>
                </thead>
                 <tbody>
                   <tr>
-                    <td><a href="https://google.com">google</a></td>
+                    <td width="25%"><p style="color:black; font-weight:bold">Mar 15</p></td>
+                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="https://google.com" style="color:black">Check-In Spring 2016</a></td>
                   </tr>
                   <tr>
-                    <td><a href="facebook.com">facebook</a></td>
+                    <td width="25%"><p style="color:black; font-weight:bold">Feb 29</p></td>
+                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="https://reslife.dartmouth.edu/StarRezPortal/Default.aspx?Params=L9ezxPcQnQuRGKTzF%2b4sxdIcsWEQNaHhlMKz6FX0gDI%3d" style="color:black">Apply for Housing</a></td>
                   </tr>
                   <tr>
-                    <td><a href="amazon.com">amazon</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="google.com">google</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="google.com">google</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="google.com">google</a></td>
+                    <td width="25%"><p style="color:black; font-weight:bold">Feb 29</p></td>
+                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="https://google.com" style="color:black">Course Assessment 16W</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -200,16 +182,16 @@
             </a>
            </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php#tab">
+            <a target="_blank" href="http://tech.dartmouth.edu/its/services-support/help-yourself/knowledge-base/computing-it-help-sources">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/NeedHelp.jpg" data-holder-rendered="true">
-              <h3 class="greenH3">Need Help</h3>
+              <h3 class="greenH3" >Need Help</h3>
               <p class="greenP">Contact us for support!</p>
             </div>
             </a>
             </div>
           <div class="col-xs-4">
-                <a href="https://canvas.dartmouth.edu">
+                <a target="_blank" href="https://canvas.dartmouth.edu">
                 <div align="center">
                   <img class="img-circle" alt="200x200" style="width: 150px; height: 150px; margin-top:10px" src="images/Canvas.jpeg" data-holder-rendered="true">
                 </div>
@@ -246,47 +228,9 @@
   </div>
 </footer>
 <!-- / FOOTER --> 
-
-
-<script>
-
-var map = new Object();
-
-map["Financial Aid Menu"] = "financial_aid_menu";
-map["Dash Account"] = "dash_account";
-map["D-Pay"] = "d_pay";
-map["Financial Authorization"] = "financial_authorization";
-map["Tuition Statement"] = "tuition_statement";
-map["Official Transcript"] = "official_transcript";
-map["Unofficial Transcript Web"] = "unofficial_transcript_web";
-map["Unofficial Transcript PDF"] = "unofficial_transcript_pdf";
-map["Degree Application"] = "degree_application";
-map["Grades By Term"] = "grades_by_term";
-map["Room Assignment"] = "room_assignment";
-map["Room Condition Form"] = "condition_form";
-map["Housing Star Portal"] = "star_portal";
-
-$('#query').typeahead({
-    minLength: 1,
-    maxItem: 20,
-    order: "asc",
-    href: function(item) {
-      console.log("tabular_page.php#" + map[item.display])
-      return "tabular_page.php#" + map[item.display];
-    },
-    template: "{{display}}",
-    source: {
-      data: ["Financial Aid Menu", "Dash Account", "D-Pay", "Financial Authorization", "Tuition Statement", "Official Transcript",
-      "Unofficial Transcript Web", "Unofficial Transcript PDF", "Degree Application", "Grades By Term", "Room Assignment", "Room Condition"
-      ,"Housing Star Portal"]
-    },
-
-    callback: {
-        onInit: function (node) {
-            console.log('Typeahead Initiated on ' + node.selector);
-    }
-  }
-})
-</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
 </body>
 </html>

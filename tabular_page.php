@@ -93,47 +93,50 @@ $(function(){
             </div>
       	 </div>
          <div class="row" style="margin-top:0px">
-           <table class="table table-striped" border="0px" width="200" style="margin-left:0px; width:45">
+           <table class="table" border="0px" width="250" style="margin-left:0px; width:45">
               <thead>
                 <tr>
                   <th>Recent Activities</th>
                 </tr>
                </thead>
                <tbody>
-                <tr>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
-                </tr>
+              <tr>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://google.com" style="color:black">Grades By Term</a></td>
+              </tr>
+              <tr>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://reslife.dartmouth.edu/StarRezPortal/Default.aspx?Params=L9ezxPcQnQuRGKTzF%2b4sxdIcsWEQNaHhlMKz6FX0gDI%3d" style="color:black">Financial Aid</a></td>
+              </tr>
+              <tr>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://google.com" style="color:black">Schedule</a></td>
+              </tr>
+              <tr>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://google.com" style="color:black">Course Offerings</a></td>
+              </tr>
+              <tr>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://reslife.dartmouth.edu/StarRezPortal/Default.aspx?Params=L9ezxPcQnQuRGKTzF%2b4sxdIcsWEQNaHhlMKz6FX0gDI%3d" style="color:black">Pass-Fail Option</a></td>
+              </tr>
               </tbody>
             </table>
         </div>
         <div class="row" style="margin-top:0px">
-           <table class="table table-striped" border="0px" width="200" style="margin-left:0px; width:45">
+           <table class="table" border="0px" width="250" style="margin-left:0px; width:45">
               <thead>
                 <tr>
-                  <th>Action Items </th>
+                  <th colspan="2">Action Items </th>
                 </tr>
                </thead>
                 <tbody>
                   <tr>
-                    <td><a href="https://google.com" style="color:black">Mar 15: Check-In Spring 2016</a></td>
+                    <td width="25%"><p style="color:black; font-weight:bold">Mar 15</p></td>
+                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="https://google.com" style="color:black">Check-In Spring 2016</a></td>
                   </tr>
                   <tr>
-                    <td><a href="https://reslife.dartmouth.edu/StarRezPortal/Default.aspx?Params=L9ezxPcQnQuRGKTzF%2b4sxdIcsWEQNaHhlMKz6FX0gDI%3d" style="color:black">Feb 29: Apply for Housing</a></td>
+                    <td width="25%"><p style="color:black; font-weight:bold">Feb 29</p></td>
+                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="https://reslife.dartmouth.edu/StarRezPortal/Default.aspx?Params=L9ezxPcQnQuRGKTzF%2b4sxdIcsWEQNaHhlMKz6FX0gDI%3d" style="color:black">Apply for Housing</a></td>
                   </tr>
                   <tr>
-                    <td><a href="https://amazon.com" style="color:black">Course Assessment W16</a></td>
+                    <td width="25%"><p style="color:black; font-weight:bold">Feb 29</p></td>
+                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="https://google.com" style="color:black">Course Assessment 16W</a></td>
                   </tr>
                 </tbody>
               </table>

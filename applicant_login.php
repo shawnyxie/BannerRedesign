@@ -90,12 +90,15 @@
                 <input type="submit" hidefocus="true" class="btn btn-primary btn-lg" id="LOGIN" value="Login" role="button" style="margin-top:40px; background-color:#1A5417; border:hidden"></a>
               </div>
 
-              <div class="row" style="margin-top:10px">
+              <div class="row" style="margin-top:15px">
               	<a style="color:#1A5417" href="https://apply.dartmouth.edu/account/reset?r=https%3a%2f%2fapply.dartmouth.edu%2fapply%2fstatus&s=&ds=">Forgot Password?</a>
+              </div>
+              <div class="row" style="margin-top:5px">
+              	<a style="color:#1A5417" href="index.php">Already a Student? Login here.</a>
               </div>
             </div>
               <div class="row" style="margin-top:40px">
-              	<p style="color:hsla(0,0%,0%,1.00); font-size:14px; font-weight:bolder">If you are having trouble logging in, please <a style="color:#1A5417" href="http://admissions.dartmouth.edu/contact-us">contact us</a></p>
+              	<p style="color:hsla(0,0%,0%,1.00); font-size:14px; font-weight:bolder">If you are having trouble logging in, please <a style="color:#1A5417" target="_blank" href="http://admissions.dartmouth.edu/contact-us">contact us</a></p>
               </div>
        		</div>
       </div>

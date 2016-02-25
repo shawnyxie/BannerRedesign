@@ -71,16 +71,13 @@
       <div class="row" style="margin-top:px">
         	<div class="col-md-6">
               	<div class="row" align="center">
-                    <p style="font-size:30x; font-weight:bold"> Welcome!</p>
+                    <p style="font-size:30x; font-weight:bold"> Welcome to Dartmouth Banner Student Portal!</p>
                 </div>
            	  <img src="images/DartmouthHall.png" width="300" height="450" align="center" alt="Dartmouth Hall"/>
             </div>
             <div class="col-md-6" align="center">
             <div class="row" style="width:400px; margin-top:30px">
-            <div class="row" style="margin-top:0px; margin-bottom:20px"> 
-              <a style="color:#1A5417; font-size:larger; font-weight:bolder" href="applicant_login.php"> Checking Admissions Decision? Click Here </a>
-            </div>
-            <div class="container-fluid" style="background-color:white; padding:40px">
+            <div class="container-fluid" style="background-color:white; padding:40px; margin-bottom:0px">
 
               <div class="row" style="margin-top:0px;font-size:20px">
                   <label for="textfield" align="left" for="username" class="col-sm-5 control-label">Net ID:</label>
@@ -91,17 +88,20 @@
                   <input name="password" type="password" id="password" class="form-control" maxlength="20" style="height:30px" placeholder="Password">
               </div>
               <div class="row">
-                <input type="submit" hidefocus="true" class="btn btn-primary btn-lg" id="LOGIN" value="Login" role="button" style="margin-top:40px; background-color:#1A5417; border:hidden"></a>
+                <input type="submit" hidefocus="true" class="btn btn-primary btn-lg" id="LOGIN" value="Login" role="button" style="margin-top:30px; background-color:#1A5417; border:hidden"></a>
               </div>
 	
+              <div class="row" style="margin-top:15px">
+              	<a style="color:#1A5417" target="_blank" href="http://tech.dartmouth.edu/its/services-support/help-yourself/netid-lookup">Need to look up NetID?</a>
+              </div>
+              <div class="row" style="margin-top:10px">
+              	<a style="color:#1A5417" target="_blank" href="https://dartdm.dartmouth.edu/dartDM/PasswordReset">Forgot Password?</a>
+              </div>
+              <div class="row" style="margin-top:10px; margin-bottom:0px"> 
+                <a style="color:#1A5417; font-weight:bolder" href="applicant_login.php"> Checking Admissions Decision? Click Here </a>
+              </div>
+              </div>
               <div class="row" style="margin-top:20px">
-              	<a style="color:#1A5417" href="http://tech.dartmouth.edu/its/services-support/help-yourself/netid-lookup">Need to look up NetID?</a>
-              </div>
-              <div class="row" style="margin-top:10px">
-              	<a style="color:#1A5417" href="https://dartdm.dartmouth.edu/dartDM/PasswordReset">Forgot Password?</a>
-              </div>
-              </div>
-              <div class="row" style="margin-top:10px">
               	<p style="color:hsla(0,0%,0%,1.00); font-size:14px; font-weight:bold">Important Security Information: Logging in to Banner lets you access other protected Dartmouth websites with this browser, not just the website you requested.</p>
               </div>
        		</div>
