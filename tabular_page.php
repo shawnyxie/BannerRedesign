@@ -72,7 +72,7 @@ $(function(){
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a style="color:#F8F8F8; font-size:large" href="main_banner_page.php">Home <span class="sr-only">(current)</span></a> </li>
-        <li><a style="color:#F8F8F8; font-size:large" href="index.php">Logout</a> </li>
+        <li><a style="color:#F8F8F8; font-size:large" href="Logout.php">Logout</a> </li>
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -86,58 +86,54 @@ $(function(){
       <div class="col-md-3" style="width:250px">
          <div class="row" align="center">
          	<div class="row" style="margin:20px">
-              <img src="images/Taeho.png" width="200" height="230" alt="" style="margin-bottom:10px; border:5px solid black" align="left"/>
+              <img src="images/Taeho.png" width="200" height="220" alt="" style="margin-bottom:15px; border:5px solid  hsla(117,57%,21%,.80)" align="left"/>
               <p style="margin-top:10px; font-weight:bold" align="left">Name: Sung, Taeho </p>
               <p style="font-weight:bold" align="left"> Year: Class of 2017 </p>
               <p style="font-weight:bold" align="left"> Degree: Undergraduate</p>
             </div>
       	 </div>
          <div class="row" style="margin-top:0px">
-              <table class="table table-striped" style="margin-left:0px; width:45">
-                <caption style="color:#1A5417; font-weight:bolder; font-size:larger">Recent Activities</caption>
-                <tbody>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                  </tr>
-                </tbody>
-              </table>
+           <table class="table table-striped" border="0px" width="200" style="margin-left:0px; width:45">
+              <thead>
+                <tr>
+                  <th>Recent Activities</th>
+                </tr>
+               </thead>
+               <tbody>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
         </div>
         <div class="row" style="margin-top:0px">
-              <table class="table table-striped" width="200" style="margin-left:0px">
-                <caption style="color:#1A5417; font-weight:bolder; font-size:larger" align="center">Action Items</caption>
+           <table class="table table-striped" border="0px" width="200" style="margin-left:0px; width:45">
+              <thead>
+                <tr>
+                  <th>Action Items </th>
+                </tr>
+               </thead>
                 <tbody>
                   <tr>
-                    <td><a href="https://google.com">google</a></td>
+                    <td><a href="https://google.com" style="color:black">Mar 15: Check-In Spring 2016</a></td>
                   </tr>
                   <tr>
-                    <td><a href="facebook.com">facebook</a></td>
+                    <td><a href="https://reslife.dartmouth.edu/StarRezPortal/Default.aspx?Params=L9ezxPcQnQuRGKTzF%2b4sxdIcsWEQNaHhlMKz6FX0gDI%3d" style="color:black">Feb 29: Apply for Housing</a></td>
                   </tr>
                   <tr>
-                    <td><a href="amazon.com">amazon</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="google.com">google</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="google.com">google</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="google.com">google</a></td>
+                    <td><a href="https://amazon.com" style="color:black">Course Assessment W16</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -148,9 +144,9 @@ $(function(){
           
         </div>
       <div class="col-md-10">
-          <div class="row" style="display:inline-block;">
+          <div class="row" style="display:inline-block">
 
-          <ul class="nav nav-tabs text-center" id="interest_tabs" float="left" style="display:inline-block; font-weight:bolder; font-size:16px">
+          <ul class="nav nav-tabs text-center" id="interest_tabs" float="left" style="display:inline-block; font-weight:bolder; font-size:16px; margin-bottom:0px">
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_schedule">My<br/>Schedule</a></li>
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_degree" text-align="center">My<br/>Degree</a></li>
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_financial" text-align="center">My<br/>Financials</a></li>
@@ -158,38 +154,36 @@ $(function(){
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_student" text-align="center">Student<br/>Life</a></li>
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_course" text-align="center">My<br/>Courses</a></li>
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_frequent" text-align="center">Frequent<br/>Links</a></li>
-            <li><a style="color:#1A5417" data-toggle="tab" href="#tab_help" text-align="center">Need<br/>Help?</a></li>
           </ul>
-          <div class="tab-content" style="background-color:hsla(117,24%,82%,1.00)">
+          <div class="tab-content" style="background-color: white; margin-top:0px; color:black">
               <div id="tab_schedule" class="tab-pane">
                 <p>Current schedule goes here</p>
               </div>
             
               <div id="tab_degree" class="tab-pane">
                   <ul class="nav nav-tabs" id="degree_nav">
-                    <li><a href="#official_transcript" data-toggle="tab">official transcript</a></li>
-                    <li><a href="#unofficial_transcript_web" data-toggle="tab">unofficial transcript (web)</a></li>
-                    <li><a href="#unofficial_transcript_pdf" data-toggle="tab">unofficial transcript (pdf)</a></li>
-                    <li><a href="#degree_application" data-toggle="tab">degree application</a></li>
-                    <li><a href="#grades_by_term" data-toggle="tab">grades_by_term</a></li>
+                    <li><a href="#official_transcript" data-toggle="tab" style="color:black; outline:none; border:0">official transcript</a></li>
+                    <li><a href="#unofficial_transcript_web" data-toggle="tab" style="color:black;outline:none; border:0">unofficial transcript</a></li>
+                    <li><a href="#degree_application" data-toggle="tab" style="color:black;outline:none; border:0">degree application</a></li>
+                    <li><a href="#grades_by_term" data-toggle="tab" style="color:black;outline:none; border:0">grades_by_term</a></li>
                   </ul>
               </div>
             
               <div id="tab_financial" class="tab-pane">
                   <ul class="nav nav-tabs" id="financial_nav">
-                    <li><a href="#financial_aid_menu" data-toggle="tab">financial aid menu</a></li>
-                    <li><a href="#dash_account" data-toggle="tab">dash card</a></li>
-                    <li><a href="#d_pay" data-toggle="tab">d pay</a></li>
-                    <li><a href="#financial_authorization" data-toggle="tab">financial authorization</a></li>
-                    <li><a href="#tuition_statement" data-toggle="tab">tuition statement</a></li>
+                    <li><a href="#financial_aid_menu" data-toggle="tab" style="color:black;outline:none; border:0">financial aid menu</a></li>
+                    <li><a href="#dash_account" data-toggle="tab" style="color:black;outline:none; border:0">dash card</a></li>
+                    <li><a href="#d_pay" data-toggle="tab" style="color:black;outline:none; border:0">d pay</a></li>
+                    <li><a href="#financial_authorization" data-toggle="tab" style="color:black;outline:none; border:0">financial authorization</a></li>
+                    <li><a href="#tuition_statement" data-toggle="tab" style="color:black;outline:none; border:0">tuition statement</a></li>
                   </ul>
               </div>
             
               <div id="tab_housing" class="tab-pane">
                   <ul class="nav nav-tabs" id="housing_nav">
-                    <li><a href="#room_assignment" data-toggle="tab">housing-room assignment</a></li>
-                    <li><a href="#condition_form" data-toggle="tab">housing-condition form</a></li>
-                    <li><a href="#star_portal" data-toggle="tab">star portal</a></li>
+                    <li><a href="#room_assignment" data-toggle="tab" style="color:black;outline:none; border:0">housing-room assignment</a></li>
+                    <li><a href="#condition_form" data-toggle="tab" style="color:black;outline:none; border:0">housing-condition form</a></li>
+                    <li><a href="#star_portal" data-toggle="tab" style="color:black;outline:none; border:0">star portal</a></li>
                   </ul>
               </div>
             
@@ -208,10 +202,6 @@ $(function(){
                   <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
               </div>
             
-              <div id="tab_help" class="tab-pane">
-                  <h3>Need Help?</h3>
-                  <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-              </div>
 
           </div>
               <div class="tab-content">
