@@ -246,6 +246,7 @@ map["Financial Aid Award"] = "award_letter"
 map["Financial Aid Status"] = "financial_aid_status";
 map["Dash Account"] = "dash_account";
 map["D-Pay"] = "d_pay";
+map["D-Plan"] = "d_plan";
 map["Financial Authorization"] = "financial_authorization";
 map["Tuition Statement"] = "tuition_statement";
 map["Course Offerings"] = "course_offerings";
@@ -283,7 +284,7 @@ $('#query').typeahead({
       data: ["Apply for Financial Aid", "Financial Aid Award", "Financial Aid Status", "Dash Account", "D-Pay", "Financial Authorization", "Tuition Statement",
       "Pass/Fail Option", "Course Offerings", "Course Registration","Citations", "Course Assessment", "Official Transcript", "Unofficial Transcript", "Degree Application", 
       "Grades By Term", "Major/Minor Work", "Verify Enrollment", "Room Assignment", "Room Condition Form", "Housing Star Portal", "Holds View",
-      "Schedule Rooms", "Religious Preference or Heritage", "Deans", "Contact Information", "Check-in", "Health Services"]
+      "Schedule Rooms", "Religious Preference or Heritage", "Deans", "Contact Information", "Check-in", "Health Services", "D-Plan"]
     },
 
     callback: {
