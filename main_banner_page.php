@@ -46,9 +46,6 @@
             <span class="query">
               <input id="query" type="text" class="form-control" placeholder="Search" autocomplete="off">
             </span>
-              <button type="submit" value="SEARCH">
-              	<img src="./images/search_button.jpg" width="15" height="15" alt="submit"/>
-              </button>
           </div>
         </div>
       </form>
