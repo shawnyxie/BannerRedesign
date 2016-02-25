@@ -14,7 +14,7 @@
 <!-- Bootstrap -->
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/style.css">
-
+<link rel="stylesheet" href="css/jquery.typeahead.css">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -24,14 +24,17 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="js/jquery-1.11.3.min.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/jquery.typeahead.js"></script>
 <script src="js/bootstrap.js"></script>
+
 <script>
 $(function(){
   var url = document.location.toString();
 
   console.log("test");
   if (url.match('#')) {
-    $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show') ;
+    $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show');
+    $('.nav-tabs a[href=#'+url.split('#')[1]+']').parent().addClass('active');
   }
 
   setTimeout(function() {
@@ -55,13 +58,17 @@ $(function(){
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+      <form class="navbar-form navbar-right" autocomplete="off" role="search">
+        <div class="typeahead-container">
+          <div class="typeahead-field">
+            <span class="query">
+              <input id="query" type="text" class="form-control" placeholder="Search" autocomplete="off">
+            </span>
+              <button type="submit" value="SEARCH">
+                <img src="./images/search_button.jpg" width="15" height="15" alt="submit"/>
+              </button>
+          </div>
         </div>
-        <button type="submit" class="btn btn-default btn-search" value="SEARCH">
-        	<img src="./images/search_button.jpg" width="15" height="15" alt="submit"/>
-        </button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a style="color:#F8F8F8; font-size:large" href="main_banner_page.php">Home <span class="sr-only">(current)</span></a> </li>
@@ -292,6 +299,57 @@ $(function(){
 </footer>
 <!-- / FOOTER --> 
 <script>
+var map = new Object();
+
+map["Financial Aid Menu"] = "financial_aid_menu";
+map["Dash Account"] = "dash_account";
+map["D-Pay"] = "d_pay";
+map["Financial Authorization"] = "financial_authorization";
+map["Tuition Statement"] = "tuition_statement";
+map["Official Transcript"] = "official_transcript";
+map["Unofficial Transcript Web"] = "unofficial_transcript_web";
+map["Unofficial Transcript PDF"] = "unofficial_transcript_pdf";
+map["Degree Application"] = "degree_application";
+map["Grades By Term"] = "grades_by_term";
+map["Room Assignment"] = "room_assignment";
+map["Room Condition Form"] = "condition_form";
+map["Housing Star Portal"] = "star_portal";
+
+$('#query').typeahead({
+    minLength: 1,
+    maxItem: 20,
+    order: "asc",
+    href: function(item) {
+      console.log("tabular_page.php#" + map[item.display])
+      return "tabular_page.php#" + map[item.display];
+    },
+    template: "{{display}}",
+    source: {
+      data: ["Financial Aid Menu", "Dash Account", "D-Pay", "Financial Authorization", "Tuition Statement", "Official Transcript",
+      "Unofficial Transcript Web", "Unofficial Transcript PDF", "Degree Application", "Grades By Term", "Room Assignment", "Room Condition"
+      ,"Housing Star Portal"]
+    },
+
+    callback: {
+      onInit: function (node) {
+        console.log("worked!");
+        console.log('Typeahead Initiated on ' + node.selector);
+      },
+
+      onClick: function () {
+        setTimeout(function() {
+          location.reload();
+        }, 5);
+      },
+
+      onSubmit: function() {
+        setTimeout(function() {
+          location.reload();
+        }, 5);
+      }
+    }
+})
+
 $('#interest_tabs').on('click', 'a[data-toggle="tab"]', function(e) {
       e.preventDefault();
       var $link = $(this);
