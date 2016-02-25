@@ -43,7 +43,16 @@ $(function(){
 });
 
 </script>
-
+<script>
+function saveDplan() {
+    var x;
+    if (confirm("Do you really wish to save?") == true) {
+        x = "You pressed OK!";
+    } else {
+        x = "You pressed Cancel!";
+    }
+  }
+</script>
 
 </head>
 <body style="background-image:url('./images/DartmouthCampus.JPG'); background-repeat:no-repeat">
@@ -194,6 +203,7 @@ $(function(){
               <div id="tab_student" class="tab-pane">
                   <ul class="nav nav-tabs" id="student_nav">
                     <li><a href="#holds_view" data-toggle="tab" style="color:black;outline:none; border:0">Holds View</a></li>
+                    <li><a href="#d_plan" data-toggle="tab" style="color:black;outline:none; border:0">D-Plan</a></li>
                     <li><a href="#schedule_rooms" data-toggle="tab" style="color:black;outline:none; border:0">Schedule Rooms</a></li>
                     <li><a href="#religious_pref" data-toggle="tab" style="color:black;outline:none; border:0">Religious Preferences and Heritage</a></li>
                     <li><a href="#dean" data-toggle="tab" style="color:black;outline:none; border:0">Dean</a></li>
@@ -357,6 +367,84 @@ $(function(){
                   <p>Holds View</p>
                 </div>
 
+                <div id="d_plan" class="tab-pane">
+                  <p>D-Plan</p>
+                  <p>Please note: Only certain changes to your D-Plan can be done online. 
+                  Some changes are not allowed or may be approved by petition to the Registrar. 
+                  Please contact Registrar@dartmouth.edu if you have further questions or information. 
+                  These include: </p>
+
+                  <ul>
+                    <li>Five year or more enrollment pattern</li>
+                    <li>Delay or waiver of Sophomore Summer</li>
+                    <li>More than 12 terms</li>
+                    <li>Waiver of senior residency</li>
+                  </ul>
+                  <br/>
+                  <br/>
+
+                  <div class="row">
+                    <table class="table" border="0px" width="500" style="margin-left:0px; width:45">
+                      <thead>
+                        <tr>
+                          <th colspan="5">D-Plan</th>
+                        </tr>
+                       </thead>
+                        <tbody>
+                          <tr>
+                            <td width="20%"><p style="color:black; font-weight:bold">Academic Year</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold">Fall</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold">Winter</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold">Spring</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold">Summer</p></td>
+                          </tr>
+                          <tr>
+                            <td width="20%"><p style="color:black; font-weight:bold">2013 - 2014</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2" disabled="true" style="background-color:white; border:none; outline:none">R</button></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2" disabled="true" style="background-color:white; border:none; outline:none">R</button></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2" disabled="true" style="background-color:white; border:none; outline:none">R</button></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2" disabled="true" style="background-color:white; border:none; outline:none">L</button></p></td>
+                          </tr>
+                          <tr>
+                            <td width="20%"><p style="color:black; font-weight:bold">2014 - 2015</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2" disabled="true" style="background-color:white; border:none; outline:none">R</button></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2" disabled="true" style="background-color:white; border:none; outline:none">R</button></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2" disabled="true" style="background-color:white; border:none; outline:none">R</button></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2" disabled="true" style="background-color:white; border:none; outline:none">L</button></p></td>
+                          </tr>
+                          <tr>
+                            <td width="20%"><p style="color:black; font-weight:bold">2015 - 2016</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2" disabled="true" style="background-color:white; border:none; outline:none">R</button></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2" disabled="true" style="background-color:white; border:none; outline:none">R</button></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2">R</button></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2">L</button></p></td>
+                          </tr>
+
+                          <tr>
+                            <td width="20%"><p style="color:black; font-weight:bold">2016 - 2017</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2" disabled="true" style="background-color:white; border:none; outline:none">R</button></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2" disabled="true" style="background-color:white; border:none; outline:none">R</button></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><button class="SeeMore2" disabled="true" style="background-color:white; border:none; outline:none">R</button></p></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    
+                    
+                  </div>
+                  
+                  <br/>
+                  <br/>
+
+                  <p>Note: International students are recommended to take three consecutive terms on before taking an off term
+                  If planning to make any changes that violate this, please contact the Office of Visa and Immigrations Services
+                  (Visa.and.Immigrations.Services@dartmouth.edu)</p>
+
+                  <br/>
+                  <button class="submit" margin-bottom="20px" onclick="saveDplan()" style="background-color:hsla(117,57%,21%,1.00); color:white;border:none; outline:none">Save Change</button>
+                  <br/>
+                  <p></p>
+                </div>
+
                 <div id="schedule_rooms" class="tab-pane">
                   <p>Schedule Rooms</p>
                 </div>
@@ -445,6 +533,8 @@ map["Deans"] = "dean";
 map["Contact Information"] = "contact_info";
 map["Check-in"] = "check_in";
 map["Health Services"] = "health";
+map["D-Plan"] = "d_plan";
+
 
 $('#query').typeahead({
     minLength: 1,
@@ -458,7 +548,7 @@ $('#query').typeahead({
       data: ["Apply for Financial Aid", "Financial Aid Award", "Financial Aid Status", "Dash Account", "D-Pay", "Financial Authorization", "Tuition Statement",
       "Pass/Fail Option", "Course Offerings", "Course Registration","Citations", "Course Assessment", "Official Transcript", "Unofficial Transcript", "Degree Application", 
       "Grades By Term", "Major/Minor Work", "Verify Enrollment", "Room Assignment", "Room Condition Form", "Housing Star Portal", "Holds View",
-      "Schedule Rooms", "Religious Preference or Heritage", "Deans", "Contact Information", "Check-in", "Health Services"]
+      "Schedule Rooms", "Religious Preference or Heritage", "Deans", "Contact Information", "Check-in", "Health Services", "D-Plan"]
     },
 
     callback: {
@@ -496,6 +586,19 @@ $('#interest_tabs').on('click', 'a[data-toggle="tab"]', function(e) {
   }
 });
 </script>
+
+<script>
+  $('.SeeMore2').click(function(){
+    var $this = $(this);
+    $this.toggleClass('SeeMore2');
+    if($this.hasClass('SeeMore2')){
+      $this.text('R');     
+    } else {
+      $this.text('L');
+    }
+  });
+</script>
+
 
 </body>
 </html>
