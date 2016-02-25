@@ -240,38 +240,57 @@
 
 <script>
 var map = new Object();
-map["Financial Aid Menu"] = "financial_aid_menu";
+
+map["Apply for Financial Aid"] = "financial_aid_application";
+map["Financial Aid Award"] = "award_letter"
+map["Financial Aid Status"] = "financial_aid_status";
 map["Dash Account"] = "dash_account";
 map["D-Pay"] = "d_pay";
 map["Financial Authorization"] = "financial_authorization";
 map["Tuition Statement"] = "tuition_statement";
+map["Course Offerings"] = "course_offerings";
+map["Course Registration"] = "register";
+map["Pass/Fail Option"] = "nro";
+map["Citations"] = "citation";
+map["Course Assessment"] = "course_assessment";
 map["Official Transcript"] = "official_transcript";
-map["Unofficial Transcript Web"] = "unofficial_transcript_web";
-map["Unofficial Transcript PDF"] = "unofficial_transcript_pdf";
+map["Unofficial Transcript"] = "unofficial_transcript";
 map["Degree Application"] = "degree_application";
 map["Grades By Term"] = "grades_by_term";
+map["Degree Work"] = "degree_work";
+map["Major/Minor Work"] ="major_minor";
+map["Verify Enrollment"] = "verify_enrollment";
 map["Room Assignment"] = "room_assignment";
 map["Room Condition Form"] = "condition_form";
 map["Housing Star Portal"] = "star_portal";
+map["Hold View"] = "holds_view";
+map["Schedule Rooms"] = "schedule_rooms";
+map["Religious Preference or Heritage"] = "religious_pref";
+map["Deans"] = "dean";
+map["Contact Information"] = "contact_info";
+map["Check-in"] = "check_in";
+map["Health Services"] = "health";
+
 $('#query').typeahead({
     minLength: 1,
     maxItem: 20,
     order: "asc",
     href: function(item) {
-      console.log("tabular_page.php#" + map[item.display])
       return "tabular_page.php#" + map[item.display];
     },
     template: "{{display}}",
     source: {
-      data: ["Financial Aid Menu", "Dash Account", "D-Pay", "Financial Authorization", "Tuition Statement", "Official Transcript",
-      "Unofficial Transcript Web", "Unofficial Transcript PDF", "Degree Application", "Grades By Term", "Room Assignment", "Room Condition"
-      ,"Housing Star Portal"]
+      data: ["Apply for Financial Aid", "Financial Aid Award", "Financial Aid Status", "Dash Account", "D-Pay", "Financial Authorization", "Tuition Statement",
+      "Pass/Fail Option", "Course Offerings", "Course Registration","Citations", "Course Assessment", "Official Transcript", "Unofficial Transcript", "Degree Application", 
+      "Grades By Term", "Major/Minor Work", "Verify Enrollment", "Room Assignment", "Room Condition Form", "Housing Star Portal", "Holds View",
+      "Schedule Rooms", "Religious Preference or Heritage", "Deans", "Contact Information", "Check-in", "Health Services"]
     },
+
     callback: {
-        onInit: function (node) {
-            console.log('Typeahead Initiated on ' + node.selector);
+      onInit: function (node) {
+        console.log('Typeahead Initiated on ' + node.selector);
+      },
     }
-  }
 })
 </script>
 </body>

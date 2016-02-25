@@ -34,7 +34,6 @@ $(function(){
   console.log("test");
   if (url.match('#')) {
     $('.nav-tabs a[href=#'+url.split('#')[1]+']').tab('show');
-    console.log($('.nav-tabs a[href=#'+url.split('#')[1]+']').parent());
   }
 
   setTimeout(function() {
@@ -174,7 +173,9 @@ $(function(){
             
               <div id="tab_financial" class="tab-pane">
                   <ul class="nav nav-tabs" id="financial_nav">
-                    <li><a href="#financial_aid_menu" data-toggle="tab" style="color:black;outline:none; border:0">financial aid menu</a></li>
+                    <li><a href="#financial_aid_application" data-toggle="tab" style="color:black;outline:none; border:0">apply for financial aid</a></li>
+                    <li><a href="#award_letter" data-toggle="tab" style="color:black;outline:none; border:0">financial aid award</a></li>
+                    <li><a href="#financial_aid_status" data-toggle="tab" style="color:black;outline:none; border:0">financial aid status</a></li>
                     <li><a href="#dash_account" data-toggle="tab" style="color:black;outline:none; border:0">dash card</a></li>
                     <li><a href="#d_pay" data-toggle="tab" style="color:black;outline:none; border:0">d pay</a></li>
                     <li><a href="#financial_authorization" data-toggle="tab" style="color:black;outline:none; border:0">financial authorization</a></li>
@@ -203,6 +204,7 @@ $(function(){
             
               <div id="tab_course" class="tab-pane">
                   <ul class="nav nav-tabs" id="courses_nav">
+                    <li><a href="#register" data-toggle="tab" style="color:black;outline:none; border:0">Course Registration</a></li>
                     <li><a href="#course_offerings" data-toggle="tab" style="color:black;outline:none; border:0">Course Offerings</a></li>
                     <li><a href="#nro" data-toggle="tab" style="color:black;outline:none; border:0">Pass/Fail Option</a></li>
                     <li><a href="#citation" data-toggle="tab" style="color:black;outline:none; border:0">Citation</a></li>
@@ -218,8 +220,31 @@ $(function(){
 
           </div>
               <div class="tab-content">
-                <div id="financial_aid_menu" class="tab-pane">
-                  <p>financial aid menu</p>
+                <div id="financial_aid_application" class="tab-pane">
+                  <p>financial aid application</p>
+                </div>
+
+                <div id="award_letter" class="tab-pane">
+                  <p>financial aid award</p>
+                  <div class="row">
+                    <div class="dropdown btn-group">
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                            Choose Academic Year
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">2015 - 2016</a></li>
+                            <li><a href="#">2014 - 2015</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                  <br/>
+                  <br/>
+                  <img src="images/award_letter.jpeg" height="1000"></img>
+                </div>
+
+                <div id="financial_aid_status" class="tab-pane">
+                  <p>financial aid status</p>
                 </div>
 
                 <div id="dash_account" class="tab-pane">
@@ -255,6 +280,26 @@ $(function(){
 
                 <div id="grades_by_term" class="tab-pane">
                   <p>grades by term</p>
+                  <div class="row">
+                    <div class="dropdown btn-group">
+                        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                            Choose a term
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Fall 2015</a></li>
+                            <li><a href="#">Spring 2015</a></li>
+                            <li><a href="#">Winter 2015</a></li>
+                            <li><a href="#">Fall 2014</a></li>
+                            <li><a href="#">Spring 2014</a></li>
+                            <li><a href="#">Winter 2014</a></li>
+                            <li><a href="#">Fall 2013</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                  <br/>
+                  <br/>
+                  <img src="images/grades.jpeg" height="400"></img>
                 </div>
 
                 <div id="degree_work" class="tab-pane">
@@ -288,6 +333,10 @@ $(function(){
               <div class="tab-content">
                 <div id="course_offerings" class="tab-pane">
                   <p>Course Offerings</p>
+                </div>
+
+                <div id="register" class="tab-pane">
+                  <p>Course Registration</p>
                 </div>
 
                 <div id="nro" class="tab-pane">
@@ -367,12 +416,15 @@ $(function(){
 <script>
 var map = new Object();
 
-map["Financial Aid Menu"] = "financial_aid_menu";
+map["Apply for Financial Aid"] = "financial_aid_application";
+map["Financial Aid Award"] = "award_letter"
+map["Financial Aid Status"] = "financial_aid_status";
 map["Dash Account"] = "dash_account";
 map["D-Pay"] = "d_pay";
 map["Financial Authorization"] = "financial_authorization";
 map["Tuition Statement"] = "tuition_statement";
 map["Course Offerings"] = "course_offerings";
+map["Course Registration"] = "register";
 map["Pass/Fail Option"] = "nro";
 map["Citations"] = "citation";
 map["Course Assessment"] = "course_assessment";
@@ -399,20 +451,18 @@ $('#query').typeahead({
     maxItem: 20,
     order: "asc",
     href: function(item) {
-      console.log("tabular_page.php#" + map[item.display])
       return "tabular_page.php#" + map[item.display];
     },
     template: "{{display}}",
     source: {
-      data: ["Financial Aid Menu", "Dash Account", "D-Pay", "Financial Authorization", "Tuition Statement", "Pass/Fail Option", "Course Offerings",
-      "Citations", "Course Assessment", "Official Transcript", "Unofficial Transcript", "Degree Application", 
+      data: ["Apply for Financial Aid", "Financial Aid Award", "Financial Aid Status", "Dash Account", "D-Pay", "Financial Authorization", "Tuition Statement",
+      "Pass/Fail Option", "Course Offerings", "Course Registration","Citations", "Course Assessment", "Official Transcript", "Unofficial Transcript", "Degree Application", 
       "Grades By Term", "Major/Minor Work", "Verify Enrollment", "Room Assignment", "Room Condition Form", "Housing Star Portal", "Holds View",
       "Schedule Rooms", "Religious Preference or Heritage", "Deans", "Contact Information", "Check-in", "Health Services"]
     },
 
     callback: {
       onInit: function (node) {
-        console.log("worked!");
         console.log('Typeahead Initiated on ' + node.selector);
       },
 
