@@ -404,7 +404,7 @@ $('#query').typeahead({
     },
     template: "{{display}}",
     source: {
-      data: ["Financial Aid Menu", "Dash Account", "D-Pay", "Financial Authorization", "Tuition Statement", "Pass/Fail Option", "Course Offerings".
+      data: ["Financial Aid Menu", "Dash Account", "D-Pay", "Financial Authorization", "Tuition Statement", "Pass/Fail Option", "Course Offerings",
       "Citations", "Course Assessment", "Official Transcript", "Unofficial Transcript", "Degree Application", 
       "Grades By Term", "Major/Minor Work", "Verify Enrollment", "Room Assignment", "Room Condition Form", "Housing Star Portal", "Holds View",
       "Schedule Rooms", "Religious Preference or Heritage", "Deans", "Contact Information", "Check-in", "Health Services"]

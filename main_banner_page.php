@@ -1,5 +1,4 @@
-<?php
-
+      <?php
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +12,7 @@
 <!-- Bootstrap -->
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/jquery.typeahead.css">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,6 +20,13 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.typeahead.js"></script>
+
+
 </head>
 <body style="background-image:url('./images/DartmouthCampus.JPG'); background-repeat:no-repeat">
 <nav class="navbar navbar-default" style="margin-bottom:0px; background-color:#1A5417">
@@ -63,7 +70,7 @@
               <p style="font-weight:bold" align="left">Degree: Undergraduate</p>
             </div>
       	 </div>
-        <div class="row" style="margin-top:0px">
+         <div class="row" style="margin-top:0px">
         	<table class="table" border="0px" width="250" style="margin-left:0px; width:45">
               <thead>
                 <tr>
@@ -183,16 +190,16 @@
             </a>
            </div>
           <div class="col-xs-4">
-            <a target="_blank" href="http://tech.dartmouth.edu/its/services-support/help-yourself/knowledge-base/computing-it-help-sources">
+            <a href="tabular_page.php#tab">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/NeedHelp.jpg" data-holder-rendered="true">
-              <h3 class="greenH3" >Need Help</h3>
+              <h3 class="greenH3">Need Help</h3>
               <p class="greenP">Contact us for support!</p>
             </div>
             </a>
             </div>
           <div class="col-xs-4">
-                <a target="_blank" href="https://canvas.dartmouth.edu">
+                <a href="https://canvas.dartmouth.edu">
                 <div align="center">
                   <img class="img-circle" alt="200x200" style="width: 150px; height: 150px; margin-top:10px" src="images/Canvas.jpeg" data-holder-rendered="true">
                 </div>
@@ -229,9 +236,43 @@
   </div>
 </footer>
 <!-- / FOOTER --> 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="https://code.jquery.com/jquery-1.11.3.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.js"></script>
+
+
+<script>
+var map = new Object();
+map["Financial Aid Menu"] = "financial_aid_menu";
+map["Dash Account"] = "dash_account";
+map["D-Pay"] = "d_pay";
+map["Financial Authorization"] = "financial_authorization";
+map["Tuition Statement"] = "tuition_statement";
+map["Official Transcript"] = "official_transcript";
+map["Unofficial Transcript Web"] = "unofficial_transcript_web";
+map["Unofficial Transcript PDF"] = "unofficial_transcript_pdf";
+map["Degree Application"] = "degree_application";
+map["Grades By Term"] = "grades_by_term";
+map["Room Assignment"] = "room_assignment";
+map["Room Condition Form"] = "condition_form";
+map["Housing Star Portal"] = "star_portal";
+$('#query').typeahead({
+    minLength: 1,
+    maxItem: 20,
+    order: "asc",
+    href: function(item) {
+      console.log("tabular_page.php#" + map[item.display])
+      return "tabular_page.php#" + map[item.display];
+    },
+    template: "{{display}}",
+    source: {
+      data: ["Financial Aid Menu", "Dash Account", "D-Pay", "Financial Authorization", "Tuition Statement", "Official Transcript",
+      "Unofficial Transcript Web", "Unofficial Transcript PDF", "Degree Application", "Grades By Term", "Room Assignment", "Room Condition"
+      ,"Housing Star Portal"]
+    },
+    callback: {
+        onInit: function (node) {
+            console.log('Typeahead Initiated on ' + node.selector);
+    }
+  }
+})
+</script>
 </body>
 </html>
