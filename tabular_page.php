@@ -236,6 +236,65 @@ function saveDplan() {
               </div>
           </div>
               <div class="tab-content">
+                              <div id="dash_account" class="tab-pane">
+<div class="text-center">
+                  <p style="font-weight:bold; color:hsla(117,57%,21%,1.00); margin-top:15px; font-size:larger">My DASH Card Account</p>
+                  </div>
+                  <p style="font-size:bold; width:750px">Below are balances on each of your DASH charges. When you click on a charge type, you will be redirected to the list of transactions for that charge type. All future transaction charges that put their respective balances below their limits will be denied</p>
+                  <br/>
+                  <div class="row">
+                    <table class="table" border="0px" width="400" style="margin-left:0px; width:755px; padding-bottom:0px">
+                      <thead>
+                        <tr>
+                            <th width="25%"><p style="color:white;  font-weight:bold">Type of Charge</p></th>
+                            <th width="25%"><p style="color:white;  font-weight:bold">Balance</p></th>
+                            <th width="25%"><p style="color:white;  font-weight:bold">Limit</p></th>
+                            <th width="25%"><p style="color:white;  font-weight:bold">As of Date</p></th>
+                        </tr>
+                       </thead>
+                        <tbody>
+                          <tr>
+                            <td width="20%"><p style="color:black; font-weight:bold; padding:10px"><a style="color: hsla(117,57%,21%,1.00)" href="https://get.cbord.com/dartmouth/full/login.php" target="_blank">DDS Charging</a></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><p>$0</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><p>None</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><p>Feb 26 2016</p></td>
+                          </tr>
+                          <tr>
+                            <td width="20%"><p style="color:black; font-weight:bold; padding:10px"><a style="color: hsla(117,57%,21%,1.00)" href="https://get.cbord.com/dartmouth/full/login.php" target="_blank">DBA</a></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><p>$104.90</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><p>$0</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><p>Feb 26 2016</p></td>
+                          </tr>
+                          <tr>
+                            <td width="20%"><p style="color:black; font-weight:bold; padding:10px"><a style="color: hsla(117,57%,21%,1.00)" href="https://get.cbord.com/dartmouth/full/login.php" target="_blank">Discretionary</a></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><p>-$57.98</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><p>-$100.00</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><p>Feb 26 2016</p></td>
+                          </tr>
+                          <tr>
+                            <td width="20%"><p style="color:black; font-weight:bold; padding:10px"><a style="color: hsla(117,57%,21%,1.00)" href="https://get.cbord.com/dartmouth/full/login.php" target="_blank">DBA</a></p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><p>$0</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><p>None</p></td>
+                            <td width="20%"><p style="color:black; font-weight:bold"><p>Feb 26 2016</p></td>
+                          </tr>
+                        </tbody>
+                      </table>   
+                  </div>                 
+                  <br/>
+                  <br/>
+
+                  
+				  <div class="text-center" style="margin-bottom:40px">
+                  <p>To make an online deposit to your account, click below: </p>
+                  <a style="background-color:hsla(117,57%,21%,1.00); color:white;border:none; outline:none; margin-right:50px" href="https://get.cbord.com/dartmouth/full/login.php" target="_blank">
+                  	<button style="background-color:hsla(117,57%,21%,1.00); outline:none; border:none">Make a Deposit</button>
+                  </a>
+                  </div>
+                </div>
+
+                <div id="d_pay" class="tab-pane">
+                  <p>D-Pay</p>
+                </div>
                 <div id="financial_aid_application" class="tab-pane">
                   <p>Financial Aid Application</p>
                 </div>
@@ -270,16 +329,8 @@ function saveDplan() {
                   <p>Financial Aid Status</p>
                 </div>
 
-                <div id="dash_account" class="tab-pane">
-                  <p>Dash Account</p>
-                </div>
-
-                <div id="d_pay" class="tab-pane">
-                  <p>D-Pay</p>
-                </div>
-
                 <div id="financial_authorization" class="tab-pane">
-                  <p>Finanacial Authorization</p>
+                  <p>Financial Authorization</p>
                 </div>
 
                 <div id="tuition_statement" class="tab-pane">
