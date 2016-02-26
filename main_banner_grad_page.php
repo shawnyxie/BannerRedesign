@@ -81,7 +81,7 @@
                   <div class="col-md-9" align="left" style="border-top:2px dotted #1A5417; border-bottom:2px dotted #1A5417">
                     <span style="width:50%; font-weight:bold; color:#1A5417"> Ravichandran, Srinath </span> <br/>
                     <span style="width:50%; font-weight:bold; color:#1A5417"> PhD, 2nd Year </span> <br/>
-                    <span style="width:50%; font-weight:bold; color:#1A5417"> Graduate </span>
+                    <span style="width:50%; font-weight:bold; color:#1A5417"> Computer Science</span>
                   </div>
                 </div>
             </div>
@@ -165,15 +165,6 @@
        </div>
        <div class="row" style="margin-top:20px">
           <div class="col-xs-4">
-            <a href="graduate_tabular_page.php#tab_housing">
-            <div align="center"> 
-              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Housing.jpg" data-holder-rendered="true">
-              <h3 class="greenH3">Housing</h3>
-              <p class="greenP">Housing Assignment and Portal</p>
-            </div>
-            </a>
-           </div>
-          <div class="col-xs-4">
             <a href="graduate_tabular_page.php#tab_student">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/StudentLife.jpg" data-holder-rendered="true">
@@ -182,6 +173,13 @@
             </div>
             </a>
           </div>
+          <div class="col-xs-4">
+            <p href="graduate_tabular_page.php#tab_housing">
+            <div align="center"> 
+              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px; margin-top:20px" src="images/Housing.jpg" data-holder-rendered="true">
+            </div>
+            </p>
+           </div>
           <div class="col-xs-4">
             <a href="graduate_tabular_page.php#tab_course">
             <div align="center">

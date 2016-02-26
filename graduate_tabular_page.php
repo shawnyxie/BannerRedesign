@@ -75,7 +75,7 @@ function saveDplan() {
         </div>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a style="color:#F8F8F8; font-size:large" href="main_banner_page.php">Home <span class="sr-only">(current)</span></a> </li>
+        <li><a style="color:#F8F8F8; font-size:large" href="main_banner_grad_page.php">Home <span class="sr-only">(current)</span></a> </li>
         <li><a style="color:#F8F8F8; font-size:large" href="Logout.php">Logout</a> </li>
       </ul>
     </div>
@@ -100,7 +100,7 @@ function saveDplan() {
                   <div class="col-md-9" align="left" style="border-top:2px dotted #1A5417; border-bottom:2px dotted #1A5417">
                     <span style="width:80%; font-weight:bold; color:#1A5417"> Ravichandran, Srinath </span> <br/>
                     <span style="width:80%; font-weight:bold; color:#1A5417"> PhD, 2nd Year </span> <br/>
-                    <span style="width:80%; font-weight:bold; color:#1A5417"> Graduate </span>
+                    <span style="width:80%; font-weight:bold; color:#1A5417"> Computer Science </span>
                   </div>
                 </div>
                 </div>
@@ -142,10 +142,6 @@ function saveDplan() {
                   </tr>
                   <tr>
                     <td width="25%"><p style="color:black; font-weight:bold">Feb 29</p></td>
-                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" target="_blank" href="https://reslife.dartmouth.edu/StarRezPortal/Default.aspx?Params=L9ezxPcQnQuRGKTzF%2b4sxdIcsWEQNaHhlMKz6FX0gDI%3d" style="color:black">Apply for Housing</a></td>
-                  </tr>
-                  <tr>
-                    <td width="25%"><p style="color:black; font-weight:bold">Feb 29</p></td>
                     <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="graduate_tabular_page.php#course_assessment" style="color:black">Course Assessment 16W</a></td>
                   </tr>
                 </tbody>
@@ -163,7 +159,6 @@ function saveDplan() {
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_schedule">My<br/>Schedule</a></li>
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_degree" text-align="center">My<br/>Degree</a></li>
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_financial" text-align="center">My<br/>Financials</a></li>
-            <li><a style="color:#1A5417" data-toggle="tab" href="#tab_housing" text-align="center">My<br/>Housing</a></li>
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_student" text-align="center">Student<br/>Life</a></li>
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_course" text-align="center">My<br/>Courses</a></li>
             <li><a style="color:#1A5417" data-toggle="tab" href="#tab_frequent" text-align="center">Frequent<br/>Links</a></li>
@@ -177,41 +172,26 @@ function saveDplan() {
                   <ul class="nav nav-tabs" id="degree_nav">
                     <li><a href="#official_transcript" data-toggle="tab" style="color:black; outline:none; border:0">Official Transcript</a></li>
                     <li><a href="#unofficial_transcript" data-toggle="tab" style="color:black;outline:none; border:0">Unofficial Transcript</a></li>
-                    <li><a href="#degree_application" data-toggle="tab" style="color:black;outline:none; border:0">Degree Application</a></li>
                     <li><a href="#grades_by_term" data-toggle="tab" style="color:black;outline:none; border:0">Grades by Term</a></li>
-                    <li><a href="#degree_work" data-toggle="tab" style="color:black;outline:none; border:0">Degree Works</a></li>
-                    <li><a href="#major_minor" data-toggle="tab" style="color:black;outline:none; border:0">Major Minor</a></li>
                     <li><a href="#verify_enrollment" data-toggle="tab" style="color:black;outline:none; border:0">Verify Enrollment</a></li>
                   </ul>
               </div>
             
               <div id="tab_financial" class="tab-pane">
                   <ul class="nav nav-tabs" id="financial_nav">
+                    <li><a href="#dash_account" data-toggle="tab" style="color:black;outline:none; border:0">Dash Card</a></li>
+                    <li><a href="#d_pay" data-toggle="tab" style="color:black;outline:none; border:0">D-Pay</a></li>
                     <li><a href="#financial_aid_application" data-toggle="tab" style="color:black;outline:none; border:0">Apply for Financial Aid</a></li>
                     <li><a href="#award_letter" data-toggle="tab" style="color:black;outline:none; border:0">Financial Aid Award</a></li>
                     <li><a href="#financial_aid_status" data-toggle="tab" style="color:black;outline:none; border:0">Financial Aid Status</a></li>
-                    <li><a href="#dash_account" data-toggle="tab" style="color:black;outline:none; border:0">Dash Card</a></li>
-                    <li><a href="#d_pay" data-toggle="tab" style="color:black;outline:none; border:0">D-Pay</a></li>
                     <li><a href="#financial_authorization" data-toggle="tab" style="color:black;outline:none; border:0">Financial Authorization</a></li>
                     <li><a href="#tuition_statement" data-toggle="tab" style="color:black;outline:none; border:0">Tuition Statement</a></li>
                   </ul>
               </div>
-            
-              <div id="tab_housing" class="tab-pane">
-                  <ul class="nav nav-tabs" id="housing_nav">
-                    <li><a href="#room_assignment" data-toggle="tab" style="color:black;outline:none; border:0">Housing-Room Assignment</a></li>
-                    <li><a href="#condition_form" data-toggle="tab" style="color:black;outline:none; border:0">Housing-Condition Form</a></li>
-                    <li><a href="#star_portal" data-toggle="tab" style="color:black;outline:none; border:0">Star Portal</a></li>
-                  </ul>
-              </div>
-            
               <div id="tab_student" class="tab-pane">
                   <ul class="nav nav-tabs" id="student_nav">
                     <li><a href="#holds_view" data-toggle="tab" style="color:black;outline:none; border:0">Holds View</a></li>
-                    <li><a href="#d_plan" data-toggle="tab" style="color:black;outline:none; border:0">D-Plan</a></li>
                     <li><a href="#schedule_rooms" data-toggle="tab" style="color:black;outline:none; border:0">Schedule Rooms</a></li>
-                    <li><a href="#religious_pref" data-toggle="tab" style="color:black;outline:none; border:0">Religious Preferences and Heritage</a></li>
-                    <li><a href="#dean" data-toggle="tab" style="color:black;outline:none; border:0">Dean</a></li>
                     <li><a href="#contact_info" data-toggle="tab" style="color:black;outline:none; border:0">Contact Information</a></li>
                     <li><a href="#health" data-toggle="tab" style="color:black;outline:none; border:0">Health Services</a></li>
                   </ul>
@@ -221,7 +201,6 @@ function saveDplan() {
                   <ul class="nav nav-tabs" id="courses_nav">
                     <li><a href="#register" data-toggle="tab" style="color:black;outline:none; border:0">Course Registration</a></li>
                     <li><a href="#course_offerings" data-toggle="tab" style="color:black;outline:none; border:0">Course Offerings</a></li>
-                    <li><a href="#nro" data-toggle="tab" style="color:black;outline:none; border:0">Pass/Fail Option</a></li>
                     <li><a href="#citation" data-toggle="tab" style="color:black;outline:none; border:0">Citation</a></li>
                     <li><a href="#course_assessment" data-toggle="tab" style="color:black;outline:none; border:0">Course Assessment</a></li>
                   </ul>
