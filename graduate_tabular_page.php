@@ -90,7 +90,7 @@ function saveDplan() {
       <div class="col-md-3" style="width:250px">
          <div class="row" align="center">
          	<div class="row" style="margin:20px">
-              <img src="images/Taeho.png" width="200" height="220" alt="" style="margin-bottom:15px; border:5px solid  hsla(117,57%,21%,.80)" align="left"/>
+              <img src="images/Srinath.png" width="200" height="220" alt="" style="margin-bottom:15px; border:5px solid  hsla(117,57%,21%,.80)" align="left"/>
               	<div class="row" align="center">
                   <div class="col-md-3" align="center" style="border-top:2px dotted #1A5417; border-bottom:2px dotted #1A5417">
                     <span style="width:40%; font-weight:bold; color:#1A5417"> Name: </span> <br/>
@@ -98,9 +98,9 @@ function saveDplan() {
                     <span style="width:40%; font-weight:bold; color:#1A5417"> Degree: </span> <br/>
                   </div>
                   <div class="col-md-9" align="left" style="border-top:2px dotted #1A5417; border-bottom:2px dotted #1A5417">
-                    <span style="width:80%; font-weight:bold; color:#1A5417"> Sung, Taeho </span> <br/>
-                    <span style="width:80%; font-weight:bold; color:#1A5417"> Class of 2017 </span> <br/>
-                    <span style="width:80%; font-weight:bold; color:#1A5417"> Undergraduate </span>
+                    <span style="width:80%; font-weight:bold; color:#1A5417"> Ravichandran, Srinath </span> <br/>
+                    <span style="width:80%; font-weight:bold; color:#1A5417"> PhD, 2nd Year </span> <br/>
+                    <span style="width:80%; font-weight:bold; color:#1A5417"> Graduate </span>
                   </div>
                 </div>
                 </div>
@@ -114,19 +114,16 @@ function saveDplan() {
                </thead>
                <tbody>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="tabular_page.php#grades_by_term" style="color:black" id="recent_grades_by_term">Grades By Term</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="graduate_tabular_page.php#grades_by_term" style="color:black" id="recent_grades_by_term">Grades By Term</a></td>
               </tr>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="tabular_page.php#award_letter" style="color:black" id="recent_financial_aid">Financial Aid</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="graduate_tabular_page.php#award_letter" style="color:black" id="recent_financial_aid">Financial Aid</a></td>
               </tr>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="tabular_page.php#schedule" style="color:black">Schedule</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="graduate_tabular_page.php#schedule" style="color:black">Schedule</a></td>
               </tr>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="tabular_page.php#course_offerings" style="color:black">Course Offerings</a></td>
-              </tr>
-              <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="tabular_page.php#pass_fail" style="color:black">Pass-Fail Option</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="graduate_tabular_page.php#course_offerings" style="color:black">Course Offerings</a></td>
               </tr>
               </tbody>
             </table>
@@ -141,7 +138,7 @@ function saveDplan() {
                 <tbody>
                   <tr>
                     <td width="25%"><p style="color:black; font-weight:bold">Mar 15</p></td>
-                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="tabular_page.php#check_in" style="color:black">Check-In Spring 2016</a></td>
+                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="graduate_tabular_page.php#check_in" style="color:black">Check-In Spring 2016</a></td>
                   </tr>
                   <tr>
                     <td width="25%"><p style="color:black; font-weight:bold">Feb 29</p></td>
@@ -149,7 +146,7 @@ function saveDplan() {
                   </tr>
                   <tr>
                     <td width="25%"><p style="color:black; font-weight:bold">Feb 29</p></td>
-                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="tabular_page.php#course_assessment" style="color:black">Course Assessment 16W</a></td>
+                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="graduate_tabular_page.php#course_assessment" style="color:black">Course Assessment 16W</a></td>
                   </tr>
                 </tbody>
               </table>

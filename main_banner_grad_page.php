@@ -95,19 +95,16 @@
                </thead>
                <tbody>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="tabular_page.php#grades_by_term" style="color:black">Grades By Term</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="graduate_tabular_page.php#grades_by_term" style="color:black">Grades By Term</a></td>
               </tr>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="tabular_page.php#award_letter" style="color:black">Financial Aid</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="graduate_tabular_page.php#award_letter" style="color:black">Financial Aid</a></td>
               </tr>
               <tr>
                 <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="#" style="color:black">Schedule</a></td>
               </tr>
               <tr>
                 <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="#" style="color:black">Course Offerings</a></td>
-              </tr>
-              <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="#" style="color:black">Pass-Fail Option</a></td>
               </tr>
               </tbody>
             </table>
@@ -139,7 +136,7 @@
     <div class="col-md-9" style="margin-left:65px; margin-top:100px; min-width:800px"> 
     <div class="row">
           <div class="col-xs-4">
-            <a href="tabular_page.php#tab_schedule">
+            <a href="graduate_tabular_page.php#tab_schedule">
             <div align="center"> 
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Schedule.jpeg" data-holder-rendered="true">
               <h3 class="greenH3">Schedule</h3>
@@ -148,7 +145,7 @@
             </a>
            </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php#tab_degree">
+            <a href="graduate_tabular_page.php#tab_degree">
             <div  align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height:150px;" src="images/Degree.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Degree</h3>
@@ -157,7 +154,7 @@
             </a>
           </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php#tab_financial">
+            <a href="graduate_tabular_page.php#tab_financial">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Financials.png" data-holder-rendered="true">
               <h3 class="greenH3">Financials</h3>
@@ -168,7 +165,7 @@
        </div>
        <div class="row" style="margin-top:20px">
           <div class="col-xs-4">
-            <a href="tabular_page.php#tab_housing">
+            <a href="graduate_tabular_page.php#tab_housing">
             <div align="center"> 
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Housing.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Housing</h3>
@@ -177,7 +174,7 @@
             </a>
            </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php#tab_student">
+            <a href="graduate_tabular_page.php#tab_student">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/StudentLife.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Student Life</h3>
@@ -186,7 +183,7 @@
             </a>
           </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php#tab_course">
+            <a href="graduate_tabular_page.php#tab_course">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Courses.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Courses</h3>
@@ -197,7 +194,7 @@
        </div>
        <div class="row" style="margin-top:20px">
           <div class="col-xs-4">
-            <a href="tabular_page.php#tab_frequent">
+            <a href="graduate_tabular_page.php#tab_frequent">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/FrequentLinks.jpeg" data-holder-rendered="true">
               <h3 class="greenH3">Quick Links</h3>
@@ -206,7 +203,7 @@
             </a>
            </div>
           <div class="col-xs-4">
-            <a href="tabular_page.php#tab">
+            <a href="graduate_tabular_page.php#tab">
             <div align="center">
               <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/NeedHelp.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Need Help</h3>
