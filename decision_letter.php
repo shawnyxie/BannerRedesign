@@ -111,8 +111,8 @@ $(function(){
                     <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00); "target="_blank" href="http://tech.dartmouth.edu/its/services-support/ask-person/live-chat" style="color:black">Chat with current students!</a></td>
                   </tr>
                   <tr>
-                    <td width="25%"><p style="color:black; font-weight:bold">Feb 29</p></td>
-                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="#" style="color:black">Submit Your SIR <br/> Commit to Dartmouth Today!</a></td>
+                    <td width="25%"><p style="color:black; font-weight:bold">May 1</p></td>
+                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="#" style="color:black">Submit Your<br/>Intent to Enroll</a></td>
                   </tr>
                 </tbody>
               </table>
