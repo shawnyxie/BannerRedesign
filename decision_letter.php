@@ -42,8 +42,8 @@ $(function(){
   }, 5);
 
 });
-
 </script>
+
 </head>
 <body style="background-image:url('./images/DartmouthCampus.JPG'); background-repeat:no-repeat">
 <nav class="navbar navbar-default" style="margin-bottom:0px; background-color:#1A5417; width:auto">
@@ -57,7 +57,6 @@ $(function(){
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a style="color:#F8F8F8; font-size:large" href="main_banner_page.php">Home <span class="sr-only">(current)</span></a> </li>
         <li><a style="color:#F8F8F8; font-size:large" href="AdmissionsLogout.php">Logout</a> </li>
       </ul>
     </div>
@@ -84,13 +83,13 @@ $(function(){
                </thead>
                <tbody>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://google.com" style="color:black">Dimensions: Sign Up!</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" target="_blank" href="https://admissions.dartmouth.edu/regular-decision-dimensions-dartmouth" style="color:black">Dimensions: Sign Up!</a></td>
               </tr>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://reslife.dartmouth.edu/StarRezPortal/Default.aspx?Params=L9ezxPcQnQuRGKTzF%2b4sxdIcsWEQNaHhlMKz6FX0gDI%3d" style="color:black">My Decision Letter</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="#my_decision_letter" id="my_decision" style="color:black">My Decision Letter</a></td>
               </tr>
               <tr>
-                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="https://google.com" style="color:black">My Financial Aid</a></td>
+                <td><a style="color:hsla(117,57%,21%,1.00); font-weight:bold" href="#my_financial_aid" id="my_fin_aid" style="color:black">My Financial Aid</a></td>
               </tr>
               </tbody>
             </table>
@@ -105,11 +104,11 @@ $(function(){
                 <tbody>
                   <tr>
                     <td width="25%"><p style="color:black; font-weight:bold">Apr 15</p></td>
-                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="#" style="color:black">Dimensions Sign Up!<br/>(Visiting Dartmouth)</a></td>
+                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00); "target="_blank" href="https://admissions.dartmouth.edu/regular-decision-dimensions-dartmouth" style="color:black">Dimensions Sign Up!<br/>(Visiting Dartmouth)</a></td>
                   </tr>
                   <tr>
                     <td width="25%"><p style="color:black; font-weight:bold">Feb 29</p></td>
-                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00);" href="#">Chat with current students!</a></td>
+                    <td width="75%"><a style="font-weight:bold; color:hsla(117,57%,21%,1.00); "target="_blank" href="http://tech.dartmouth.edu/its/services-support/ask-person/live-chat" style="color:black">Chat with current students!</a></td>
                   </tr>
                   <tr>
                     <td width="25%"><p style="color:black; font-weight:bold">Feb 29</p></td>
@@ -125,7 +124,6 @@ $(function(){
         </div>
       <div class="col-md-10">
           <div class="row" style="display:inline-block">
-
               <ul class="nav nav-tabs text-center" id="interest_tabs" float="left" style="display:inline-block; font-weight:bolder; font-size:16px; margin-bottom:0px">
                 <li><a style="color:#1A5417" data-toggle="tab" href="#my_decision_letter">My Decision Letter</a></li>
                 <li><a style="color:#1A5417" data-toggle="tab" href="#my_financial_aid" text-align="center">My Financial Aid</a></li>
@@ -220,5 +218,17 @@ $(function(){
   </div>
 </footer>
 <!-- / FOOTER --> 
+
+<script>
+	$('#my_decision').click(function() {
+		location.reload();
+	});
+</script>
+
+<script>
+	$('#my_fin_aid').click(function() {
+		location.reload();
+	});
+</script>
 </body>
 </html>
