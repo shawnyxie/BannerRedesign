@@ -83,3 +83,46 @@ table td, table th {
 	 font-weight:bold;
  }
  
+ .imgWrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+ 
+#contain{
+    clear: both;
+}
+
+#contain:hover div.text{
+    display: block;
+}
+
+.text{
+ 	color:hsla(117,58%,13%,1.00);
+	font-weight:bold;
+    display: none;    
+}​

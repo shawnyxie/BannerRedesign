@@ -129,88 +129,89 @@
               </table>
           </div>
       </div>
-    <div class="col-md-9" style="margin-left:65px; margin-top:100px; min-width:800px"> 
-    <div class="row">
+    <div class="col-md-9" style="margin-left:65px; margin-top:70px; min-width:800px"> 
+    <div class="row" style="height:280px">
           <div class="col-xs-4">
-            <a href="tabular_page.php#tab_schedule">
-            <div align="center"> 
-              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Schedule.jpeg" data-holder-rendered="true">
+            <a  href="tabular_page.php#tab_schedule">
+            <div align="center" id="contain"> 
+              <img class="img-circle" alt="200x200" style="width: 180px; height: 180px;" src="images/Schedule.jpeg" data-holder-rendered="true">
               <h3 class="greenH3">Schedule</h3>
-              <p class="greenP">View My Term and Weekly Schedule</p>
+              <div class="text">View My Term and Weekly Schedule</div>
             </div>
             </a>
            </div>
           <div class="col-xs-4">
             <a href="tabular_page.php#tab_degree">
-            <div  align="center">
-              <img class="img-circle" alt="200x200" style="width: 150px; height:150px;" src="images/Degree.jpg" data-holder-rendered="true">
+            <div  align="center" id="contain">
+              <img class="img-circle" alt="200x200" style="width: 200px; height:200px;" src="images/Degree.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Degree</h3>
-              <p class="greenP">Degree, Enrollment, Grades, Transcript</p>
+              <div class="text">Degree, Enrollment, Grades, Transcript</div>
             </div>
             </a>
           </div>
           <div class="col-xs-4">
             <a href="tabular_page.php#tab_financial">
-            <div align="center">
-              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Financials.png" data-holder-rendered="true">
+            <div align="center" id="contain">
+              <img class="img-circle" alt="200x200" style="width: 180px; height: 180px;" src="images/Financials.png" data-holder-rendered="true">
               <h3 class="greenH3">Financials</h3>
-              <p class="greenP">Dash, D-Pay, Financial Aid, Tuition</p>
+              <div class="text">Dash, D-Pay, Financial Aid, Tuition</div>
             </div>
             </a>
           </div>
        </div>
-       <div class="row" style="margin-top:20px">
+       <div class="row" style="margin-top:20px; height:280px">
           <div class="col-xs-4">
             <a href="tabular_page.php#tab_housing">
-            <div align="center"> 
-              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Housing.jpg" data-holder-rendered="true">
+            <div align="center" id="contain"> 
+              <img class="img-circle" alt="200x200" style="width: 180px; height: 180px;" src="images/Housing.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Housing</h3>
-              <p class="greenP">Housing Assignment and Portal</p>
+              <div class="text">Housing Assignment and Portal</div>
             </div>
             </a>
            </div>
           <div class="col-xs-4">
             <a href="tabular_page.php#tab_student">
-            <div align="center">
-              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/StudentLife.jpg" data-holder-rendered="true">
+            <div align="center" id="contain">
+              <img class="img-circle" alt="200x200" style="width: 180px; height: 180px;" src="images/StudentLife.png" data-holder-rendered="true">
               <h3 class="greenH3">Student Life</h3>
-              <p class="greenP">Student Information and Activities</p>
+              <div class="text">Student Information and Activities</div>
             </div>
             </a>
           </div>
           <div class="col-xs-4">
             <a href="tabular_page.php#tab_course">
-            <div align="center">
-              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/Courses.jpg" data-holder-rendered="true">
+            <div align="center" id="contain">
+              <img class="img-circle" alt="200x200" style="width: 180px; height: 180px;" src="images/Courses.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Courses</h3>
-              <p class="greenP">Registration, Pass/Fail, Course Assessment</p>
+              <div class="text">Registration, Pass/Fail, Course Assessment</div>
             </div>
             </a>
           </div>
        </div>
-       <div class="row" style="margin-top:20px">
+       <div class="row" style="margin-top:20px; height:280px">
           <div class="col-xs-4">
             <a href="tabular_page.php#tab_frequent">
-            <div align="center">
-              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/FrequentLinks.jpeg" data-holder-rendered="true">
+            <div align="center" id="contain">
+              <img class="img-circle" alt="200x200" style="width: 180px; height: 180px;" src="images/FrequentLinks.jpeg" data-holder-rendered="true">
               <h3 class="greenH3">Quick Links</h3>
-              <p class="greenP">View Frequent Links</p>
+              <div class="text">View Frequent Links</div>
             </div>
             </a>
            </div>
           <div class="col-xs-4">
             <a href="tabular_page.php#tab">
-            <div align="center">
-              <img class="img-circle" alt="200x200" style="width: 150px; height: 150px;" src="images/NeedHelp.jpg" data-holder-rendered="true">
+            <div align="center" id="contain">
+              <img class="img-circle" alt="200x200" style="width: 180px; height: 180px;" src="images/NeedHelp.jpg" data-holder-rendered="true">
               <h3 class="greenH3">Need Help</h3>
-              <p class="greenP">Contact us for support!</p>
+              <div class="text">Contact us for support!</div>
             </div>
             </a>
             </div>
           <div class="col-xs-4">
                 <a href="https://canvas.dartmouth.edu">
                 <div align="center">
-                  <img class="img-circle" alt="200x200" style="width: 150px; height: 150px; margin-top:10px" src="images/Canvas.jpeg" data-holder-rendered="true">
+                  <img class="img-circle" alt="200x200" style="width: 180px; height: 180px" src="images/Canvas.jpeg" data-holder-rendered="true">
+                  <h3 class="greenH3"> Canvas </h3>
                 </div>
                 </a>
           </div>
